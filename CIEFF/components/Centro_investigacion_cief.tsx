@@ -18,13 +18,6 @@ export default function OrganigramaCIEF() {
       subtitulo: "Profesores vinculados",
       sigla: "GI3A",
     },
-    {
-      titulo: "Investigadores Nóveles",
-      nombre: "",
-      tipo: "",
-      subtitulo: "",
-      sigla: "",
-    },
   ];
 
   return (
@@ -84,7 +77,7 @@ export default function OrganigramaCIEF() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 justify-center"
         >
           {grupos.map((g, i) => (
             <div
