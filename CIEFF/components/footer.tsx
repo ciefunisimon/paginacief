@@ -43,7 +43,7 @@ export default function Footer() {
             <div className="space-y-3 text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <span>📧</span>
-                <span>cief@unisimon.edu.co</span>
+                <span>centrodeinvestigacioncief@unisimon.edu.co</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span>📞</span>
@@ -51,8 +51,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <span>📍</span>
-                <span>Calle 14 con Av. 4° #4-13 Cucuta,Norte de Santander,
-                      Colombia.Sede 4.UNISIMON</span>
+                <span>Av. 3.ª # 13 - 34 - Barrio La Playa. 
+                Cúcuta, Norte de Santander (Colombia).</span>
               </div>
             </div>
           </div>
