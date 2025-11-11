@@ -10,12 +10,12 @@ interface HeaderProps {
 
 const navigation = [
   { name: "Inicio", href: "/" },
-  { name: "CIEF: Quiénes Somos", href: "/quienes_somos" },
+  { name: "¿Quiénes Somos?", href: "/quienes_somos" },
   { name: "Investigación", href: "/investigacion" },
   { name: "Impacto y Colaboración", href: "/impacto" },
   { name: "Publicaciones y Recursos", href: "/publirecu" },
   { name: "Noticias y Eventos", href: "/notieventos" },
-  { name: "Contacto y Global", href: "/contactos" },
+  { name: "Contacto ", href: "/contactos" },
 ];
 
 export default function Header({ transparent = false }: HeaderProps) {
@@ -65,7 +65,7 @@ export default function Header({ transparent = false }: HeaderProps) {
           </div>
 
           {/* 🔸 Navegación escritorio (más flexible y con menor padding) */}
-          <div className="hidden lg:flex flex-wrap justify-end gap-1">
+          <div className="hidden lg:flex flex-wrap justify-end gap-3">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -115,5 +115,6 @@ export default function Header({ transparent = false }: HeaderProps) {
     </header>
   );
 }
+
 
 
