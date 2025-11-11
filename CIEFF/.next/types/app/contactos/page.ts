@@ -1,4 +1,4 @@
-// File: C:\Users\Jesus Cardona\Downloads\ciinatic-2025-main\app\contactos\page.tsx
+// File: C:\Users\Jesus Cardona\Documents\GitHub\paginacief\CIEFF\app\contactos\page.tsx
 import * as entry from '../../../../app/contactos/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

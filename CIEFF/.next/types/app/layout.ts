@@ -1,4 +1,4 @@
-// File: C:\Users\Jesus Cardona\Downloads\ciinatic-2025-main\app\layout.tsx
+// File: C:\Users\Jesus Cardona\Documents\GitHub\paginacief\CIEFF\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

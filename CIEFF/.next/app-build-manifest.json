@@ -11,50 +11,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/impacto/page": [
+    "/contactos/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/impacto/page.js"
-    ],
-    "/galeria/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/galeria/page.js"
+      "static/chunks/app/contactos/page.js"
     ],
     "/quienes_somos/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/quienes_somos/page.js"
     ],
-    "/investigacion/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/investigacion/page.js"
-    ],
-    "/publirecu/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/publirecu/page.js"
-    ],
-    "/cifras_gi3a/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cifras_gi3a/page.js"
-    ],
     "/notieventos/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/notieventos/page.js"
-    ],
-    "/contactos/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/contactos/page.js"
-    ],
-    "/policy/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/policy/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
