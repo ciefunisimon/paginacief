@@ -155,7 +155,7 @@ export default function HomePage() {
               </Link>
 
               <Link
-                href="/observatorio"
+                href="/mantenimiento"
                 className="block p-6 sm:p-8 rounded-2xl shadow-md border border-[#68AB6A]/30 hover:shadow-lg transition text-center bg-gradient-to-b from-white to-gray-50"
               >
                 <h3 className="text-2xl font-semibold text-[#68AB6A] mb-4">
@@ -295,7 +295,7 @@ export default function HomePage() {
                 {
                   title: "OBSERVATORIO DE DATOS",
                   desc: "Para investigadores y la academia. Acceso a datos filtrables, GrupLac y Directorio de Expertos.",
-                  link: "/observatorio",
+                  link: "/mantenimiento",
                   btn: "Acceder a la Base de Datos",
                 },
                 {
