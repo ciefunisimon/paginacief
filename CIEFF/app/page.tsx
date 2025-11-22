@@ -295,7 +295,7 @@ export default function HomePage() {
                 {
                   title: "OBSERVATORIO DE DATOS",
                   desc: "Para investigadores y la academia. Acceso a datos filtrables, GrupLac y Directorio de Expertos.",
-                  link: "/mantenimiento",
+                  link: "/directorio",
                   btn: "Acceder a la Base de Datos",
                 },
                 {

@@ -1,7 +1,9 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
+  "/directorio/page": "app/directorio/page.js",
+  "/impacto/page": "app/impacto/page.js",
+  "/investigacion/page": "app/investigacion/page.js",
   "/mantenimiento/page": "app/mantenimiento/page.js",
-  "/quienes_somos/page": "app/quienes_somos/page.js",
-  "/noticias/page": "app/noticias/page.js",
   "/notieventos/page": "app/notieventos/page.js"
 }

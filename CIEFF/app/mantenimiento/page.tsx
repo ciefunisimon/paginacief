@@ -17,11 +17,7 @@ export default function MantenimientoPage() {
           Página en mantenimiento
         </h1>
 
-        {/* 🔹 Texto secundario */}
-        <p className="text-lg md:text-2xl max-w-2xl leading-relaxed">
-          Muy pronto vas a poder conocer a más detalle a nuestros{" "}
-          <span className="font-semibold text-[#FFB000]">investigadores</span>.
-        </p>
+    
 
         {/* 🔹 Línea decorativa */}
         <div className="w-24 h-1 bg-[#FFB000] mt-8 rounded-full"></div>
