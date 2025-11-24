@@ -1,7 +1,7 @@
 {
-  "/2023/page": "app/2023/page.js",
   "/contactos/page": "app/contactos/page.js",
-  "/2024/page": "app/2024/page.js",
   "/page": "app/page.js",
-  "/directorio/page": "app/directorio/page.js"
+  "/directorio/page": "app/directorio/page.js",
+  "/notieventos/page": "app/notieventos/page.js",
+  "/2025/page": "app/2025/page.js"
 }

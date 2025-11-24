@@ -80,6 +80,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/2024/page.js"
+    ],
+    "/2025/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/2025/page.js"
     ]
   }
 }

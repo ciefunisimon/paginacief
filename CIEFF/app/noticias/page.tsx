@@ -7,50 +7,50 @@ import { FaCalendarAlt } from "react-icons/fa";
 const noticias = [
   {
     id: 1,
-    titulo: "CIEF impulsa proyectos binacionales",
+    titulo: "noticia 1",
     fecha: "10 Oct 2025",
     descripcion:
-      "El CIEF promueve la cooperación entre Colombia y Venezuela mediante proyectos conjuntos en desarrollo sostenible y transferencia de conocimiento.",
+      "noticia 1",
     imagen: "/img/noticia1.jpg",
   },
   {
     id: 2,
-    titulo: "Nuevas alianzas académicas en frontera",
+    titulo: "noticia 2",
     fecha: "5 Oct 2025",
     descripcion:
-      "Universidades fronterizas firman acuerdos para fortalecer la investigación y la innovación en la región.",
+      "noticia 2",
     imagen: "/img/noticia2.jpg",
   },
   {
     id: 3,
-    titulo: "Presentación del Policy Brief sobre Migración",
+    titulo: "noticia 3",
     fecha: "28 Sep 2025",
     descripcion:
-      "El CIEF publica un análisis sobre políticas migratorias y su impacto social en las zonas fronterizas.",
+      "noticia 3",
     imagen: "/img/noticia3.jpg",
   },
   {
     id: 4,
-    titulo: "Seminario Internacional de Innovación Social",
+    titulo: "noticia 4",
     fecha: "15 Ago 2025",
     descripcion:
-      "Investigadores y estudiantes participaron en el evento anual del CIEF, compartiendo avances en innovación social y tecnológica.",
+      "noticia 4",
     imagen: "/img/noticia4.jpg",
   },
   {
     id: 5,
-    titulo: "CIEF recibe reconocimiento nacional",
+    titulo: "noticia 5",
     fecha: "2 Jul 2025",
     descripcion:
-      "El CIEF fue galardonado por su contribución al fortalecimiento de la ciencia y tecnología en zonas de frontera.",
+      "noticia 5",
     imagen: "/img/noticia5.jpg",
   },
   {
     id: 6,
-    titulo: "Taller sobre Inteligencia Artificial Aplicada",
+    titulo: "noticia 6",
     fecha: "10 Jun 2025",
     descripcion:
-      "Docentes del CIEF lideraron un taller práctico sobre el uso ético y responsable de la inteligencia artificial en la educación.",
+      "noticia 6.",
     imagen: "/img/noticia6.jpg",
   },
 ];

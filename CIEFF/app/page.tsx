@@ -342,9 +342,9 @@ export default function HomePage() {
         </h3>
         <hr className="my-3 border-white/30" />
         <ul className="space-y-3 text-white/90">
-          <li>📅 [10 Oct 2025] - CIEF impulsa proyectos binacionales</li>
-          <li>📅 [5 Oct 2025] - Nuevas alianzas académicas en frontera</li>
-          <li>📅 [28 Sep 2025] - Presentación del Policy Brief sobre Migración</li>
+          <li>📅 [10 Oct 2025] - noticia 1</li>
+          <li>📅 [5 Oct 2025] - noticia 2</li>
+          <li>📅 [28 Sep 2025] - noticia 3</li>
         </ul>
         <Link
           href="/notieventos"
@@ -356,22 +356,58 @@ export default function HomePage() {
 
       {/* 📅 Agenda */}
       <div className="p-6 sm:p-8 border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-sm">
+        {/* TÍTULO */}
         <h3 className="text-xl font-bold mb-2 text-[#FFB000]">
-          Próximos Eventos (Agenda)
+          Mira Nuestros Eventos
         </h3>
+
         <hr className="my-3 border-white/30" />
-        <ul className="space-y-3 text-white/90">
-          <li>📅 [20 Oct 2025] - Evento Internacional: “Fronteras Sustentables”</li>
-          <li>📅 [2 Nov 2025] - Seminario Dimensión de Trabajo X</li>
-          <li>📅 [18 Nov 2025] - Presentación de Policy Brief Y</li>
-        </ul>
-        <Link
-          href="/notieventos"
-          className="block mt-6 text-[#FFB000] hover:underline text-sm font-medium"
-        >
-          Ver Agenda Completa →
-        </Link>
+
+        
+
+        {/* ───────────────────────────────────── */}
+        {/* 🔸 TARJETAS DE AÑOS INCORPORADAS */}
+        {/* ───────────────────────────────────── */}
+        <div className="mt-10">
+          
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {/* TARJETA 2023 */}
+            <Link
+              href="/2023"
+              className="bg-[#FFB000] rounded-xl p-6 shadow-lg text-center 
+                        hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.03] 
+                        transition-all duration-300"
+            >
+              <h2 className="text-3xl font-bold text-black">2023</h2>
+              <span className="text-sm text-black font-medium">Ver Eventos</span>
+            </Link>
+
+            {/* TARJETA 2024 */}
+            <Link
+              href="/2024"
+              className="bg-[#FFB000] rounded-xl p-6 shadow-lg text-center 
+                        hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.03] 
+                        transition-all duration-300"
+            >
+              <h2 className="text-3xl font-bold text-black">2024</h2>
+              <span className="text-sm text-black font-medium">Ver Eventos</span>
+            </Link>
+
+            {/* TARJETA 2025 */}
+            <Link
+              href="/2025"
+              className="bg-[#FFB000] rounded-xl p-6 shadow-lg text-center 
+                        hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.03] 
+                        transition-all duration-300"
+            >
+              <h2 className="text-3xl font-bold text-black">2025</h2>
+              <span className="text-sm text-black font-medium">Ver Eventos</span>
+            </Link>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
