@@ -116,19 +116,19 @@ export default function HomePage() {
          
 
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-2xl sm:text-4xl font-extrabold">
-            <span className="relative text-[#68AB6A]">
+            <span className="relative text-white">
               CREA
-              <span className="absolute left-0 bottom-0 w-full h-1 bg-[#68AB6A]/60 rounded-full"></span>
+              <span className="absolute left-0 bottom-0 w-full h-1 bg-white/60 rounded-full"></span>
             </span>
             <span className="text-white">-</span>
-            <span className="relative text-[#FFB000]">
+            <span className="relative text-white">
               CONECTA
-              <span className="absolute left-0 bottom-0 w-full h-1 bg-[#FFB000]/60 rounded-full"></span>
+              <span className="absolute left-0 bottom-0 w-full h-1 bg-white/60 rounded-full"></span>
             </span>
             <span className="text-white">-</span>
-            <span className="relative text-black">
+            <span className="relative text-white">
               TRASCIENDE
-              <span className="absolute left-0 bottom-0 w-full h-1 bg-black/40 rounded-full"></span>
+              <span className="absolute left-0 bottom-0 w-full h-1 bg-white/40 rounded-full"></span>
             </span>
           </div>            
             </div>

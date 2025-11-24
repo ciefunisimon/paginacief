@@ -50,27 +50,27 @@ const ProfesorCard: React.FC<ProfesorCardProps> = ({
       <div className="flex items-center justify-center gap-4 my-4">
         {links?.cvlac && (
           <a href={links.cvlac} target="_blank">
-            <img src="/icons/cvlac.png" className="w-10" />
+            <img src="/CvLAC.png" className="w-10" />
           </a>
         )}
         {links?.scopus && (
           <a href={links.scopus} target="_blank">
-            <img src="/icons/scopus.png" className="w-10" />
+            <img src="/Scopus.png" className="w-10" />
           </a>
         )}
         {links?.orcid && (
           <a href={links.orcid} target="_blank">
-            <img src="/icons/orcid.png" className="w-10" />
+            <img src="/orcid.png" className="w-10" />
           </a>
         )}
         {links?.researchgate && (
           <a href={links.researchgate} target="_blank">
-            <img src="/icons/rg.png" className="w-10" />
+            <img src="/ResearchGate.png" className="w-10" />
           </a>
         )}
         {links?.scholar && (
           <a href={links.scholar} target="_blank">
-            <img src="/icons/scholar.png" className="w-10" />
+            <img src="/Google_Scholar.png" className="w-10" />
           </a>
         )}
       </div>

@@ -320,6 +320,12 @@ const aliados = [
     href: "https://www.cens.com.co/",
     tipo: "Gobierno",
   },
+   {
+    name: "CAPAZ(Instituto colombo-aleman para la paz)",
+    logo: "/capaz.jpg",
+    href: "https://www.instituto-capaz.org/",
+    tipo: "Institucinal",
+  },
 
 ];
 

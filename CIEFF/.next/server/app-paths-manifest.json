@@ -1,9 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
+  "/2023/page": "app/2023/page.js",
+  "/contactos/page": "app/contactos/page.js",
+  "/2024/page": "app/2024/page.js",
   "/page": "app/page.js",
-  "/directorio/page": "app/directorio/page.js",
-  "/impacto/page": "app/impacto/page.js",
-  "/investigacion/page": "app/investigacion/page.js",
-  "/mantenimiento/page": "app/mantenimiento/page.js",
-  "/notieventos/page": "app/notieventos/page.js"
+  "/directorio/page": "app/directorio/page.js"
 }

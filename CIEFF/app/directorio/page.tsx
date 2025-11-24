@@ -18,29 +18,28 @@ export default function DirectorioProfesores() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto opacity-90 leading-relaxed text-white">
-            Consulta la información académica, enlaces profesionales y líneas de
-            investigación de cada profesor vinculado a nuestro grupo.
+            Consulta la información de cada profesor vinculado al CIEF (redes académicas y temas de investigación).
           </p>
         </section>
 
         {/* GRID DE PROFESORES */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
           <ProfesorCard
-            foto="/profesores/neida.jpg"
+            foto="/Neida_Albornozz.jpeg"
             nombre="Neida Albornoz Arias"
-            correo="neida.albornoz@unismon.edu.co"
+            correo="neida.albornoz@unisimon.edu.co"
             links={{
-              cvlac: "https://...",
-              scopus: "https://...",
-              orcid: "https://...",
-              researchgate: "https://...",
-              scholar: "https://..."
+              cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001630101",
+              scopus: "https://www.scopus.com/authid/detail.uri?authorId=57194446275",
+              orcid: "https://orcid.org/0000-0001-7851-5985",
+              researchgate: "https://www.researchgate.net/profile/Neida-Albornoz-Arias",
+              scholar: "https://scholar.google.es/citations?user=MkJ72HsAAAAJ&hl=es&oi=ao"
             }}
             temas={[
               "Construcción de paz territorial",
               "Desarrollo territorial sostenible",
               "Economías populares solidarias",
-              "Equidad de género",
+              "Equidad de género ",
               "Movilidad humana y fronteras"
             ]}
           />
