@@ -975,17 +975,11 @@ font-weight: 100 900;
   .bg-\[\#68AB6A\]\/50 {
     background-color: color-mix(in oklab, #68AB6A 50%, transparent);
   }
-  .bg-\[\#68AB6A\]\/60 {
-    background-color: color-mix(in oklab, #68AB6A 60%, transparent);
-  }
   .bg-\[\#F9A826\] {
     background-color: #F9A826;
   }
   .bg-\[\#FFB000\] {
     background-color: #FFB000;
-  }
-  .bg-\[\#FFB000\]\/60 {
-    background-color: color-mix(in oklab, #FFB000 60%, transparent);
   }
   .bg-background {
     background-color: var(--background);
@@ -997,12 +991,6 @@ font-weight: 100 900;
     background-color: color-mix(in srgb, #000 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-black) 20%, transparent);
-    }
-  }
-  .bg-black\/40 {
-    background-color: color-mix(in srgb, #000 40%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-black) 40%, transparent);
     }
   }
   .bg-black\/70 {
