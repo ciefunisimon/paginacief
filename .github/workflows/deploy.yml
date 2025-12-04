@@ -1,0 +1,21 @@
+name: Deploy GitHub Pages from CIEFF
+
+on:
+  push:
+    branches:
+      - main # Asegúrate de que esta sea la rama de tu código fuente
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # 🚨 ESTA LÍNEA INDICA LA CARPETA EXACTA:
+          publish_dir: ./CIEFF  
+          publish_branch: gh-pages # Crea una nueva rama para los archivos publicados
