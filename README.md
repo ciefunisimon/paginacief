@@ -1,30 +1,29 @@
-# CIINATIC 2025 web
+# 🌐 CIEF Project: Official Website
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+This repository holds the official source code for the **CIEF (Centro de Investigación y Estudios de Futuro)** website project, seamlessly deployed using Vercel and GitHub.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/sdadmasmdkcvkvxkcs-projects/v0-ciinatic-2025-web)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/HDEJBlAocNI)
+## 🚀 Deployment Status
 
-## Overview
+The current Production site is successfully being served via Vercel and is the source of truth for the application.
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://paginacief.vercel.app)
+[![Code on GitHub](https://img.shields.io/badge/Code%20on-GitHub-100000?style=for-the-badge&logo=github)](https://github.com/ciefunisimon/paginacief)
 
-## Deployment
+---
 
-Your project is live at:
+## 🔗 Project URLs
 
-**[https://vercel.com/sdadmasmdkcvkvxkcs-projects/v0-ciinatic-2025-web](https://vercel.com/sdadmasmdkcvkvxkcs-projects/v0-ciinatic-2025-web)**
+| Deployment Target | URL | Notes |
+| :--- | :--- | :--- |
+| **Vercel Production** | **[https://paginacief.vercel.app](https://paginacief.vercel.app)** | Primary Production URL |
+| **Custom Domain** | **cief.unisimon.edu.co** | Configured in Vercel |
+| **GitHub Pages** | [https://ciefunisimon.github.io/paginacief/](https://ciefunisimon.github.io/paginacief/) | Automatically generated documentation. |
 
-## Build your app
+---
 
-Continue building your app on:
+## 🏗️ Technical Details
 
-**[https://v0.app/chat/projects/HDEJBlAocNI](https://v0.app/chat/projects/HDEJBlAocNI)**
+The project is fully synchronized with Vercel and deploys from the **main branch**.
 
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+* **Source Branch:** `main`
+* **Vercel Status:** Ready Latest
