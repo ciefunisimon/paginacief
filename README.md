@@ -1,6 +1,6 @@
 # 🌐 CIEF Project: Official Website
 
-This repository holds the official source code for the **CIEF (Centro de Investigación y Estudios de Futuro)** website project, seamlessly deployed using Vercel and GitHub.
+This repository holds the official source code for the **CIEF (Centro de Investigación en Estudios de Frontera)** website project, seamlessly deployed using Vercel and GitHub.
 
 ## 🚀 Deployment Status
 
