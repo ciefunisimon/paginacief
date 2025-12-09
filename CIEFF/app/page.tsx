@@ -155,7 +155,7 @@ export default function HomePage() {
               </Link>
 
               <Link
-                href="/mantenimiento"
+                href="/directorio"
                 className="block p-6 sm:p-8 rounded-2xl shadow-md border border-[#68AB6A]/30 hover:shadow-lg transition text-center bg-gradient-to-b from-white to-gray-50"
               >
                 <h3 className="text-2xl font-semibold text-[#68AB6A] mb-4">
@@ -184,7 +184,7 @@ export default function HomePage() {
             </div>
 
             {/* 📊 Estadísticas estilo infografía */}
-            <div className="mt-8 grid grid-cols-1 gap-8">
+            <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               {/* Sección Nuevo conocimiento */}
               <div>
                 <h3 className="text-2xl font-bold mb-4 flex justify-center items-center gap-2">
@@ -242,35 +242,38 @@ export default function HomePage() {
               </div>
 
               {/* Sección de proyectos y actividades */}
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 justify-center">
-                {[
-                  { label: "Proyectos", value: 28, color: "#34C759" },
-                  { label: "Eventos científicos", value: 68, color: "#FFB000" },
-                  { label: "Apropiación social", value: 29, color: "#AF52DE" },
-                  { label: "Redes conocimiento", value: 20, color: "#0A84FF" },
-                  { label: "Consultorías", value: 17, color: "#A8E6CF" },
-                  { label: "Tutorías", value: 105, color: "#FF3B30" },
-                  { label: "Movilidades", value: 23, color: "#FFD60A" },
-                ].map((stat, i) => (
-                  <div
-                    key={i}
-                    className="flex flex-col items-center justify-center bg-white text-black p-3 rounded-xl shadow-lg hover:scale-105 transition-all"
-                    style={{
-                      borderBottom: `6px solid ${stat.color}`,
-                    }}
-                  >
-                    <span
-                      className="text-2xl font-bold"
-                      style={{ color: stat.color }}
-                    >
-                      {stat.value}
-                    </span>
-                    <p className="text-xs mt-1 font-medium text-center">
-                      {stat.label}
-                    </p>
+                  <div className="flex justify-center w-full ml-80">
+                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mt-12 w-fit">
+                      {[
+                        { label: "Proyectos", value: 28, color: "#34C759" },
+                        { label: "Eventos científicos", value: 68, color: "#FFB000" },
+                        { label: "Apropiación social", value: 29, color: "#AF52DE" },
+                        { label: "Redes conocimiento", value: 20, color: "#0A84FF" },
+                        { label: "Consultorías", value: 17, color: "#A8E6CF" },
+                        { label: "Tutorías", value: 105, color: "#FF3B30" },
+                        { label: "Movilidades", value: 23, color: "#FFD60A" },
+                      ].map((stat, i) => (
+                        <div
+                          key={i}
+                          className="flex flex-col items-center justify-center bg-white text-black p-3 rounded-xl shadow-lg hover:scale-105 transition-all"
+                          style={{
+                            borderBottom: `6px solid ${stat.color}`,
+                          }}
+                        >
+                          <span
+                            className="text-2xl font-bold"
+                            style={{ color: stat.color }}
+                          >
+                            {stat.value}
+                          </span>
+                          <p className="text-xs mt-1 font-medium text-center">
+                            {stat.label}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                ))}
-              </div>
+
             </div>
           </div>
         </section>
