@@ -41,7 +41,7 @@ export default function DirectorioProfesores() {
       foto: "/beatriz_mendoza.jpg",
       nombre: " Beatriz Milagros Mendoza Rincón ",
       correo: " beatriz.mendoza@unisimon.edu.co",
-      categoria: "junior", // <<--- AGREGA LA CATEGORÍA AQUÍ
+      categoria: "asociado", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
         cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001561711",
         scopus: "https://www.scopus.com/authid/detail.uri?authorId=57218268331",
@@ -75,7 +75,7 @@ export default function DirectorioProfesores() {
       foto: "/carolina_martinez.jpeg",
       nombre: " Carolina Ramírez Martínez ",
       correo: " carolina.ramirez@unisimon.edu.co ",
-      categoria: "asociado", // <<--- AGREGA LA CATEGORÍA AQUÍ
+      categoria: "senior", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
         cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001347874",
         scopus: "https://www.scopus.com/authid/detail.uri?authorId=57193402864",
@@ -110,27 +110,10 @@ export default function DirectorioProfesores() {
       ]
     },
     {
-      foto: "/diana.jpg",
-      nombre: " Diana Marcela Pantaleón Pinto ",
-      correo: " diana.pantaleon@unisimon.edu.co ",
-      categoria: "sin_categoria", // <<--- AGREGA LA CATEGORÍA AQUÍ
-      links: {
-        cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000102502",
-        scopus: "",
-        orcid: "https://orcid.org/0000-0002-4622-7759",
-        researchgate: "https://www.researchgate.net/profile/Diana-Pantaleon",
-        scholar: "https://scholar.google.es/citations?hl=es&user=Y-s-jicAAAAJ"
-      },
-      temas: [
-        "",
-
-      ]
-    },
-    {
       foto: "/doris_palma.jpeg",
       nombre: " Doris Rocio Palma Suárez  ",
       correo: " rocio.palma@unisimon.edu.co ",
-      categoria: "sin_categoria", // <<--- AGREGA LA CATEGORÍA AQUÍ
+      categoria: "asociado", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
         cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001453243",
         scopus: "",
@@ -150,7 +133,7 @@ export default function DirectorioProfesores() {
       foto: "/edgar_camargo.png",
       nombre: " Edgar Alexis Díaz Camargo  ",
       correo: " edgara.diaz@unisimon.edu.co ",
-      categoria: "asociado", // <<--- AGREGA LA CATEGORÍA AQUÍ
+      categoria: "senior", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
         cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001432904",
         scopus: "https://www.scopus.com/authid/detail.uri?authorId=57204199021",
@@ -167,28 +150,10 @@ export default function DirectorioProfesores() {
       ]
     },
     {
-      foto: "/elkin.png",
-      nombre: " Elkin Gelvez Almeida ",
-      correo: " elkin.gelvez@unisimon.edu.co ",
-      categoria: "asociado", // <<--- AGREGA LA CATEGORÍA AQUÍ
-      links: {
-        cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001544201",
-        scopus: "https://www.scopus.com/authid/detail.uri?authorId=57205685157",
-        orcid: "https://orcid.org/0000-0001-5157-3341",
-        researchgate: "https://www.researchgate.net/profile/Elkin-Gelvez-Almeida",
-        scholar: "https://scholar.google.es/citations?user=KNR9-2IAAAAJ&hl=es&oi=ao"
-      },
-      temas: [
-        "",
-      
-
-      ]
-    },
-    {
       foto: "/enmanuel_navas.jpeg",
       nombre: " Enmanuel Omar Nava Sarmiento   ",
       correo: " enmanuel.nava@unisimon.edu.co ",
-      categoria: "asociado", // <<--- AGREGA LA CATEGORÍA AQUÍ
+      categoria: "junior", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
         cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001497076",
         scopus: "",
@@ -244,7 +209,7 @@ export default function DirectorioProfesores() {
       foto: "/franlet_araque.png",
       nombre: " Franlet Rocio Araque Castellanos  ",
       correo: " franlet.araque@unisimon.edu.co ",
-      categoria: "junior", // <<--- AGREGA LA CATEGORÍA AQUÍ
+      categoria: "asociado", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
         cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001337490",
         scopus: "https://www.scopus.com/authid/detail.uri?authorId=57221306312",
@@ -337,7 +302,7 @@ export default function DirectorioProfesores() {
       foto: "/jose_tamara.jpeg",
       nombre: " Jose Albeiro Tamara Uribe ",
       correo: " jose.uribet@unisimon.edu.co ",
-      categoria: "sin_categoria", // <<--- AGREGA LA CATEGORÍA AQUÍ
+      categoria: "junior", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
         cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000176477",
         scopus: "",
@@ -356,7 +321,7 @@ export default function DirectorioProfesores() {
       foto: "/jose_hernandez.jpeg",
       nombre: " Jose Antonio Hernandez Ramirez  ",
       correo: " jose.hernandezr@unisimon.edu.co ",
-      categoria: "sin_categoria", 
+      categoria: "junior", 
       links: {
         cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001635463",
         scopus: "https://www.scopus.com/authid/detail.uri?authorId=36860091300",
@@ -374,23 +339,7 @@ export default function DirectorioProfesores() {
         "Strategic design",
       ]
     },
-    {
-      foto: "/jose_rincon.jpeg",
-      nombre: " Jose Maria Rincon Ramon   ",
-      correo: " jose.rincon@unisimon.edu.co ",
-      categoria: "sin_categoria", 
-      links: {
-        cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000037139",
-        scopus: "",
-        orcid: "https://orcid.org/0000-0002-1992-5172",
-        researchgate:"https://www.researchgate.net/profile/Jose-Rincon-17",
-        scholar: "https://scholar.google.es/citations?user=G6c28SsAAAAJ&hl=es&oi=ao"
-      },
-      temas: [
-        "",
-       
-      ]
-    },
+    
   
     {
       foto: "/jovany_gomez.jpeg",
@@ -474,24 +423,7 @@ export default function DirectorioProfesores() {
        
       ]
     },
-    {
-      foto: "/karen_quinones.jpg",
-      nombre: " Karen Andrea Quiñones Diaz     ",
-      correo: " karen.quinones@unisimon.edu.co ",
-      categoria: "junior", 
-      links: {
-        cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000099604",
-        scopus: "https://www.scopus.com/authid/detail.uri?authorId=57209075566",
-        orcid: "https://orcid.org/0000-0002-7963-8175",
-        researchgate:"https://www.researchgate.net/profile/Karen-Quinones-3",
-        scholar: "https://scholar.google.es/citations?hl=es&user=9lQZoLEAAAAJ"
-      },
-      temas: [
-        "",
-        
-       
-      ]
-    },
+    
     {
       foto: "/leonardo_diaz.jpg",
       nombre: " Leonardo Yotuhel Díaz Guecha  ",
@@ -511,7 +443,7 @@ export default function DirectorioProfesores() {
         "Gestión tecnológica e innovación",
        
       ]
-    },
+    }, 
     {
       foto: "/luis_suarez.jpg",
       nombre: " Luis Arnulfo Suarez Espitia   ",
@@ -532,24 +464,7 @@ export default function DirectorioProfesores() {
        
       ]
     },
-    {
-      foto: "/luis_ruiz.jpg",
-      nombre: " Luis Carlos Ruiz Dominguez    ",
-      correo: " luis.ruiz@unisimon.edu.co ",
-      categoria: "junior", 
-      links: {
-        cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001422363",
-        scopus: "https://www.scopus.com/authid/detail.uri?authorId=57213355785",
-        orcid: "https://orcid.org/0000-0002-1362-7924",
-        researchgate:"https://www.researchgate.net/profile/Luis_Ruiz64",
-        scholar: "https://scholar.google.es/citations?user=FR_58JYAAAAJ&hl=es&oi=ao"
-      },
-      temas: [
-        "",
-       
-       
-      ]
-    },
+    
     {
       foto: "/magali_nino.jpg",
       nombre: " Magali Alba Niño   ",
@@ -687,24 +602,7 @@ export default function DirectorioProfesores() {
         
       ]
     },
-    {
-      foto: "/miguel_vera.png",
-      nombre: " Miguel Angel Vera ",
-      correo: " miguel.vera@unisimon.edu.co ",
-      categoria: "senior", 
-      links: {
-        cvlac:"https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000055698",
-        scopus: "https://www.scopus.com/authid/detail.uri?authorId=57203214239",
-        orcid: "https://orcid.org/0009-0002-4904-0460",
-        researchgate:"https://www.researchgate.net/profile/Miguel-Vera-2",
-        scholar: "https://scholar.google.es/citations?user=rpBfDzUAAAAJ&hl=es&oi=ao"
-      },
-      temas: [
-        "",
-        
-        
-      ]
-    },
+   
     {
       foto: "/myriam_carreno.jpg",
       nombre: " Myriam Teresa Carreño Paredes ",
@@ -918,22 +816,7 @@ export default function DirectorioProfesores() {
         
       ]
     },
-    {
-      foto: "/sandra_vargas.png",
-      nombre: " Sandra Milena Vargas Angulo  ",
-      correo: " sandra.vargas@unisimon.edu.co ",
-      categoria: "asociado", 
-      links: {
-        cvlac:"https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001452144",
-        scopus: "https://www.scopus.com/authid/detail.uri?authorId=57200414062",
-        orcid: "https://orcid.org/0000-0001-7091-4092",
-        researchgate:"https://www.researchgate.net/profile/Sandra-Vargas-6",
-        scholar: "https://scholar.google.es/citations?user=GuEi9bYAAAAJ&hl=es&oi=ao"
-      },
-      temas: [
-        "",
-      ]
-    },
+    
     {
       foto: "/Sheyla_Herrera.jpg",
       nombre: " Sheyla Vanessa Herrera Martinez  ",
@@ -1050,23 +933,7 @@ export default function DirectorioProfesores() {
         "Deep Learning",
       ]
     },
-    {
-      foto: "/fabian_basto.jpg",
-      nombre: " Fabian Eduardo Basto Camacho    ",
-      correo: " fabian.bastoc@unisimon.edu.co ",
-      categoria: "sin_categoria", 
-      links: {
-        cvlac:"https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001370499",
-        scopus: "",
-        orcid: "",
-        researchgate:"",
-        scholar: ""
-      },
-      temas: [
-        "",
-        
-      ]
-    },
+    
     {
       foto: "/jover_cabrales.jpg",
       nombre: " Jover Alonso Cabrales Pineda     ",
@@ -1107,60 +974,9 @@ export default function DirectorioProfesores() {
         
       ]
     },
-    {
-      foto: "/mariana_penaloza.jpeg",
-      nombre: " Mariana Elena Peñaloza Tarazona     ",
-      correo: " mariana.penaloza@unisimon.edu.co ",
-      categoria: "senior", 
-      links: {
-        cvlac:"https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000074487",
-        scopus: "https://www.scopus.com/authid/detail.uri?authorId=57209475449",
-        orcid: "https://orcid.org/0000-0002-3863-0580",
-        researchgate:"https://www.researchgate.net/profile/Mariana-Penaloza-Tarazona",
-        scholar: "https://scholar.google.es/citations?hl=es&user=6R5Noe0AAAAJ"
-      },
-      temas: [
-        "",
-        
-        
-      ]
-    },
-    {
-      foto: "/mariana_penaloza.jpeg",
-      nombre: " Mariana Elena Peñaloza Tarazona     ",
-      correo: " mariana.penaloza@unisimon.edu.co ",
-      categoria: "senior", 
-      links: {
-        cvlac:"https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000074487",
-        scopus: "https://www.scopus.com/authid/detail.uri?authorId=57209475449",
-        orcid: "https://orcid.org/0000-0002-3863-0580",
-        researchgate:"https://www.researchgate.net/profile/Mariana-Penaloza-Tarazona",
-        scholar: "https://scholar.google.es/citations?hl=es&user=6R5Noe0AAAAJ"
-      },
-      temas: [
-        "",
-        
-        
-      ]
-    },
-    {
-      foto: "/miguel_perez.jpeg",
-      nombre: " Miguel Angel Perez Villamizar      ",
-      correo: " miguel.perezv@unisimon.edu.co ",
-      categoria: "sin_categoria", 
-      links: {
-        cvlac:"https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000457949",
-        scopus: "",
-        orcid: "https://orcid.org/0000-0003-4064-5850",
-        researchgate:"",
-        scholar: ""
-      },
-      temas: [
-        "",
-        
-        
-      ]
-    },
+    
+    
+    
     {
       foto: "/oswaldo_laguado.jpg",
       nombre: " Oswaldo Enrique Laguado Aguilar      ",
@@ -1179,35 +995,7 @@ export default function DirectorioProfesores() {
         
         
       ]
-    },
-    {
-      foto: "/wilmer_rodriguez.jpg",
-      nombre: " Wilmer Yazzid Rodriguez Velasquez      ",
-      correo: " wilmer.rodriguezv@unisimon.edu.co ",
-      categoria: "sin_categoria", 
-      links: {
-        cvlac:"https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000066840",
-        scopus: "",
-        orcid: "https://orcid.org/0009-0002-9376-3295",
-        researchgate:"",
-        scholar: "https://scholar.google.es/citations?hl=es&user=dSuqucoAAAAJ"
-      },
-      temas: [
-        "",
-        
-        
-        
-      ]
-    },
-
-
-
-
-
-
-
-
-
+    },    
     // Agrega más profesores aquí...
   ];
 
