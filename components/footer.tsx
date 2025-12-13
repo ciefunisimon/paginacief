@@ -1,10 +1,10 @@
 "use client";
-import { FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   const socialLinks = [
     { name: "Instagram", icon: <FaInstagram />, href: "https://www.instagram.com/cief.unisimon/" },
     { name: "YouTube", icon: <FaYoutube />, href: "https://www.youtube.com/@CIEFUNISIMON" },
-    { name: "X (Twitter)", icon: <FaTwitter />, href: "https://x.com/CIEF_UNISIMON" },
+    { name: "X (Twitter)", icon: <FaXTwitter />, href: "https://x.com/CIEF_UNISIMON" },
   ];
 
 

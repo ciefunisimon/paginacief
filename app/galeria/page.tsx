@@ -21,7 +21,7 @@ const data = [
     { value: 16, label: "Innovaciones generadas de la gestión empresarial / organizacional" },
     { value: 3, label: "Prototipos" },
     { value: 5, label: "Signos distintivos" },
-    { value: 3, label: "Policy’s brief", href: "/policy" },
+    { value: 4, label: "Policy’s brief", href: "/policy" },
   ],
   [
     { value: 3, label: "Tutorías y asesorías de trabajos de doctorado" },

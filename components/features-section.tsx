@@ -26,7 +26,7 @@ export default function Organigrama() {
       ],
     },
      {
-      titulo: "Coordinaciones Académicas y Técnicas",
+      titulo: "Jefaturas y Extensión Cúcuta",
       personas: [
         { img: "/marbel_gravini.jpg", nombre: "Marbel Gravini Donado", cargo: "Jefe Oficina Formación para la Investigación" },
         { img: "/manuel_riaño.jpg", nombre: "Manuel Riaño", cargo: "Jefe de Investigación - Cúcuta" },

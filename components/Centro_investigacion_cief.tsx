@@ -69,6 +69,38 @@ export default function OrganigramaCIEF() {
           </div>
         </motion.div>
 
+        {/* 🔗 Líneas conectoras */}
+        <svg
+          className="absolute top-0 left-0 w-full h-full pointer-events-none"
+          viewBox="0 0 1200 900"
+        >
+          {/* Nivel 1 → Nivel 2 */}
+          <line
+            x1="600"
+            y1="360"
+            x2="600"
+            y2="416"
+            stroke="black"
+            strokeWidth="2"
+          />
+
+          {/* Nivel 2 → línea horizontal */}
+          <line
+            x1="300"
+            y1="620"
+            x2="900"
+            y2="620"
+            stroke="black"
+            strokeWidth="2"
+          />
+
+          {/* Bajadas a cada grupo */}
+          <line x1="300" y1="620" x2="300" y2="647" stroke="black" strokeWidth="2" />
+          <line x1="600" y1="582" x2="600" y2="619" stroke="black" strokeWidth="2" />
+          <line x1="900" y1="620" x2="900" y2="647" stroke="black" strokeWidth="2" />
+        </svg>
+
+
       
 
         {/* 🔹 Nivel 3: Grupos de investigación */}

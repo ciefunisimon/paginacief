@@ -1,4 +1,4 @@
-// File: C:\Users\Jesus Cardona\Documents\GitHub\paginacief\CIEFF\app\directorio\page.tsx
+// File: C:\Users\Jesus Cardona\Documents\GitHub\paginacief\app\directorio\page.tsx
 import * as entry from '../../../../app/directorio/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

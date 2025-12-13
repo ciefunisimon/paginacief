@@ -9,11 +9,11 @@ export default function CiefCifrasPage() {
   const cifras = [
     { label: "Proyectos", value: 24 },
     { label: "Artículos científicos", value: 125 },
-    { label: "Libros de investigación", value: 10 },
+    { label: "Libros de investigación", value: 6 },
     { label: "Capítulos de libro", value: 22 },
     { label: "Eventos científicos", value: 68 },
     { label: "Redes de conocimiento", value: 20 },
-    { label: "Innovaciones", value: 6 },
+    { label: "Innovaciones", value: 21 },
     { label: "Policy Briefs", value: 4 },
   ];
 
