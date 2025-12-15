@@ -504,12 +504,6 @@ font-weight: 100 900;
   .h-\[220px\] {
     height: 220px;
   }
-  .h-\[260px\] {
-    height: 260px;
-  }
-  .h-\[350px\] {
-    height: 350px;
-  }
   .h-\[500px\] {
     height: 500px;
   }
@@ -1520,6 +1514,9 @@ font-weight: 100 900;
   }
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
+  }
+  .pb-30 {
+    padding-bottom: calc(var(--spacing) * 30);
   }
   .text-center {
     text-align: center;
@@ -2561,14 +2558,34 @@ font-weight: 100 900;
       padding-block: calc(var(--spacing) * 16);
     }
   }
+  .sm\:py-19 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 19);
+    }
+  }
   .sm\:py-20 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 20);
     }
   }
+  .sm\:py-22 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 22);
+    }
+  }
   .sm\:py-24 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 24);
+    }
+  }
+  .sm\:py-28 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 28);
+    }
+  }
+  .sm\:py-30 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 30);
     }
   }
   .sm\:pt-32 {

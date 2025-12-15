@@ -39,7 +39,7 @@ export default function CifrasCIEF() {
       {/* 🟢 Header */}
       <Header />
 
-      <main className="flex-grow pt-24 pb-16">
+      <main className="flex-grow pt-30 pb-16">
         {/* 🔹 Sección de título */}
         <section className="text-center mb-12 px-6">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
@@ -62,8 +62,8 @@ export default function CifrasCIEF() {
             <Link
               href="https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000005408"
               target="_blank"
-              className="inline-block px-6 py-2 bg-white text-black rounded-lg font-semibold 
-                         hover:bg-gray-100 transition"
+              className="inline-block px-6 py-2 bg-[#68AB6A] text-white rounded-lg font-semibold 
+                         hover:bg-[#68AB6A]-100 transition"
             >
               Ir al grupo ALEF
             </Link>

@@ -41,7 +41,7 @@ export default function PolicyLabPage() {
       <Header />
 
       {/* 🟧 Contenido principal */}
-      <section className="flex-1 py-12 sm:py-16 bg-[#68AB6A]">
+      <section className="flex-1 py-12 sm:py-30 bg-[#68AB6A]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
           {/* 🔹 Título principal */}
           <h1 className="text-center text-white text-3xl sm:text-4xl md:text-5xl font-extrabold">
