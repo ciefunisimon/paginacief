@@ -23,7 +23,7 @@ export default function CiefCifrasPage() {
 
       <main className="flex-grow">
         {/* 🔹 Título principal */}
-        <section className="text-center py-12 sm:py-16 px-4">
+        <section className="text-center py-12 sm:py-30 px-4">
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}

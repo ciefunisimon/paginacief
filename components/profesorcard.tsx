@@ -89,7 +89,7 @@ const ProfesorCard: React.FC<ProfesorCardProps> = ({
           )}
           {links?.orcid && (
             <a href={links.orcid} target="_blank">
-              <img src="/orcid.png" className="w-8 sm:w-9 md:w-10" />
+              <img src="/orcidd.png" className="w-8 sm:w-9 md:w-10" />
             </a>
           )}
           {links?.researchgate && (
