@@ -1,7 +1,6 @@
 {
-  "/publirecu/page": "app/publirecu/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/impacto/page": "app/impacto/page.js",
-  "/galeria/page": "app/galeria/page.js",
-  "/cifras_gi3a/page": "app/cifras_gi3a/page.js"
+  "/directorio/page": "app/directorio/page.js",
+  "/quienes_somos/page": "app/quienes_somos/page.js"
 }

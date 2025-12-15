@@ -2879,9 +2879,19 @@ font-weight: 100 900;
       line-height: var(--tw-leading, var(--text-xs--line-height));
     }
   }
+  .lg\:absolute {
+    @media (width >= 64rem) {
+      position: absolute;
+    }
+  }
   .lg\:col-span-2 {
     @media (width >= 64rem) {
       grid-column: span 2 / span 2;
+    }
+  }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
     }
   }
   .lg\:flex {
@@ -2907,6 +2917,16 @@ font-weight: 100 900;
   .lg\:h-60 {
     @media (width >= 64rem) {
       height: calc(var(--spacing) * 60);
+    }
+  }
+  .lg\:h-\[260px\] {
+    @media (width >= 64rem) {
+      height: 260px;
+    }
+  }
+  .lg\:h-\[350px\] {
+    @media (width >= 64rem) {
+      height: 350px;
     }
   }
   .lg\:h-\[360px\] {

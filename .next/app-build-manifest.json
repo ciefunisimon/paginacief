@@ -21,35 +21,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/quienes_somos/page.js"
     ],
-    "/contactos/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contactos/page.js"
-    ],
-    "/investigacion/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/investigacion/page.js"
-    ],
-    "/publirecu/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/publirecu/page.js"
-    ],
-    "/impacto/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/impacto/page.js"
-    ],
-    "/galeria/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/galeria/page.js"
-    ],
-    "/cifras_gi3a/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/cifras_gi3a/page.js"
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
