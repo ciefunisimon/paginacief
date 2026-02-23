@@ -2,7 +2,7 @@
 
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function DivulgacionPage() {
@@ -23,7 +23,7 @@ export default function DivulgacionPage() {
     },
     {
       nombre: "X (Twitter)",
-      icono: <FaTwitter className="text-5xl sm:text-6xl text-black" />,
+      icono: <FaXTwitter className="text-5xl sm:text-6xl text-black" />,
       enlace: "https://twitter.com/cief_unisimon",
       descripcion:
         "Entérate de las novedades y proyectos del CIEF en tiempo real.",

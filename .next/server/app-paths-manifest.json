@@ -1,9 +1,9 @@
 {
-  "/policy/page": "app/policy/page.js",
-  "/publirecu/page": "app/publirecu/page.js",
-  "/notieventos/page": "app/notieventos/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/directorio/page": "app/directorio/page.js",
+  "/quienes_somos/page": "app/quienes_somos/page.js",
   "/cifras/page": "app/cifras/page.js",
-  "/capsulas_video/page": "app/capsulas_video/page.js"
+  "/policy/page": "app/policy/page.js",
+  "/capsulas_video/page": "app/capsulas_video/page.js",
+  "/directorio/page": "app/directorio/page.js"
 }

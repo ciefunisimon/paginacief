@@ -32,6 +32,7 @@ font-weight: 100 900;
 @layer theme {
   :root, :host {
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-green-500: oklch(72.3% 0.219 149.579);
@@ -504,6 +505,9 @@ font-weight: 100 900;
   .h-\[220px\] {
     height: 220px;
   }
+  .h-\[420px\] {
+    height: 420px;
+  }
   .h-\[500px\] {
     height: 500px;
   }
@@ -629,6 +633,9 @@ font-weight: 100 900;
   }
   .max-w-\[220px\] {
     max-width: 220px;
+  }
+  .max-w-\[280px\] {
+    max-width: 280px;
   }
   .max-w-lg {
     max-width: var(--container-lg);
@@ -1413,8 +1420,17 @@ font-weight: 100 900;
   .object-cover {
     object-fit: cover;
   }
+  .object-\[50\%_30\%\] {
+    object-position: 50% 30%;
+  }
+  .object-\[50\%_40\%\] {
+    object-position: 50% 40%;
+  }
   .object-center {
     object-position: center;
+  }
+  .object-top {
+    object-position: top;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -1503,6 +1519,9 @@ font-weight: 100 900;
   .pt-30 {
     padding-top: calc(var(--spacing) * 30);
   }
+  .pr-2 {
+    padding-right: calc(var(--spacing) * 2);
+  }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
   }
@@ -1514,9 +1533,6 @@ font-weight: 100 900;
   }
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
-  }
-  .pb-30 {
-    padding-bottom: calc(var(--spacing) * 30);
   }
   .text-center {
     text-align: center;
@@ -1686,6 +1702,9 @@ font-weight: 100 900;
   }
   .text-primary-foreground {
     color: var(--primary-foreground);
+  }
+  .text-red-600 {
+    color: var(--color-red-600);
   }
   .text-transparent {
     color: transparent;
@@ -2055,13 +2074,6 @@ font-weight: 100 900;
     &:hover {
       @media (hover: hover) {
         background-color: var(--card);
-      }
-    }
-  }
-  .hover\:bg-gray-100 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-gray-100);
       }
     }
   }
@@ -2558,29 +2570,14 @@ font-weight: 100 900;
       padding-block: calc(var(--spacing) * 16);
     }
   }
-  .sm\:py-19 {
-    @media (width >= 40rem) {
-      padding-block: calc(var(--spacing) * 19);
-    }
-  }
   .sm\:py-20 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 20);
     }
   }
-  .sm\:py-22 {
-    @media (width >= 40rem) {
-      padding-block: calc(var(--spacing) * 22);
-    }
-  }
   .sm\:py-24 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 24);
-    }
-  }
-  .sm\:py-28 {
-    @media (width >= 40rem) {
-      padding-block: calc(var(--spacing) * 28);
     }
   }
   .sm\:py-30 {
