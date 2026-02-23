@@ -125,7 +125,6 @@ export default function DirectorioProfesores() {
         orcid: "https://orcid.org/0000-0003-2517-8393",
         researchgate:"https://www.researchgate.net/profile/Juan-Hernandez-Albarracin",
         scholar: "https://scholar.google.es/citations?user=DECmTOjjVVQC&hl=es&oi=ao"
-        
       },
       temas: [
         "Filosofía de la educación",
@@ -134,10 +133,7 @@ export default function DirectorioProfesores() {
         "Gobernanza y desarrollo territorial",
         
        
-      ],
-      fotoPosicion: "object-[50%_30%]"
-
-    
+      ]
     },
     {
       foto: "/yurley_hernandez.jpg",
@@ -156,6 +152,25 @@ export default function DirectorioProfesores() {
         "Didáctica de las ciencias experimentales",
         "Educación, tecnología y sociedad del conocimiento",
         "Educación para la paz y convivencia ciudadana",
+      ]
+    },
+    {
+      foto: "/sandra_carrillo.png",
+      nombre: " Sandra Milena Carrillo Sierra    ",
+      correo: " sandra.carrillo@unisimon.edu.co ",
+      categoria: "senior", 
+      links: {
+        cvlac:"https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001379127",
+        scopus: "https://www.scopus.com/authid/detail.uri?authorId=57202353895",
+        orcid: "https://orcid.org/0000-0001-9848-2367",
+        researchgate:"https://www.researchgate.net/profile/Sandra-Carrillo-Sierra",
+        scholar: "https://scholar.google.es/citations?user=fKOezBEAAAAJ&hl=es&oi=ao"
+      },
+      temas: [
+        "Género, diversidad y derechos humanos ",
+        "Salud mental y bienestar psicosocial ",
+        "Validación y estandarización de instrumentos psicológicos ",
+        
       ]
     },
     {
@@ -218,7 +233,7 @@ export default function DirectorioProfesores() {
       ]
     },
     {
-      foto: "/jesus_oreste.jpeg",
+      foto: "/jesus_santos.jpeg",
       nombre: " Jesus Oreste Forgiony Santos  ",
       correo: " jesus.forgiony@unisimon.edu.co ",
       categoria: "senior", // <<--- AGREGA LA CATEGORÍA AQUÍ
@@ -250,8 +265,7 @@ export default function DirectorioProfesores() {
       },
       temas: [
         "Bibliometría",
-      ],
-      fotoPosicion:"object-[50%_40%]"
+      ]
     },
     {
       foto: "/oscar_medina.JPG",
@@ -527,7 +541,7 @@ export default function DirectorioProfesores() {
       ]
     },
     {
-      foto: "/luis_suarez2.jpeg",
+      foto: "/luis_suarez.jpg",
       nombre: " Luis Arnulfo Suarez Espitia   ",
       correo: " luis.suareze@unisimon.edu.co ",
       categoria: "junior", 
@@ -567,7 +581,7 @@ export default function DirectorioProfesores() {
       ]
     },
     {
-      foto: "/frank_stewars2.jpeg",
+      foto: "/frank_steward.jpeg",
       nombre: " Frank Steward Orduz Gualdron    ",
       correo: " frank.orduz@unisimon.edu.co ",
       categoria: "junior", // <<--- AGREGA LA CATEGORÍA AQUÍ
@@ -664,7 +678,7 @@ export default function DirectorioProfesores() {
       ]
     },
     {
-      foto: "/onoefre2.jpeg",
+      foto: "/onofre_clavijo.jpeg",
       nombre: " Onofre Vargas Clavijo  ",
       correo: " onofre.vargas@unisimon.edu.co ",
       categoria: "junior", 
@@ -963,7 +977,7 @@ export default function DirectorioProfesores() {
     },
      
     {
-      foto: "/zuleima_bitar2.jpeg",
+      foto: "/zuleima_bitar.jpeg",
       nombre: " Zuleima Esther Bitar Yidi  ",
       correo: " zuleima.bitar@unisimon.edu.co ",
       categoria: "sin_categoria", 
@@ -980,8 +994,7 @@ export default function DirectorioProfesores() {
         "Salud mental y bienestar psicosocial",
         "Educación sexual integral y desarrollo humano",
         "Relaciones afectivas ",
-      ],
-      fotoPosicion:"object-[50%_30%]"
+      ]
     },
     
       // Agrega más profesores aquí...
@@ -1012,7 +1025,7 @@ export default function DirectorioProfesores() {
         {/* TÍTULO */}
         <section className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-white">
-            Directorio de Investigadores
+            Directorio de Profesores
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto opacity-90 leading-relaxed text-white">

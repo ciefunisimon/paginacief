@@ -6,7 +6,7 @@ export default function EurekaSection() {
   return (
     <section className="relative bg-gradient-to-b from-white via-[#f8faf8] to-[#e9f3ea] py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-12 overflow-hidden">
       {/* 🌿 Fondo decorativo con patrón suave */}
-      
+      <div className="absolute inset-0 bg-[url('/images/pattern-green.svg')] opacity-10 bg-repeat bg-center" />
 
       {/* 📄 Contenedor principal */}
       <div className="relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto">

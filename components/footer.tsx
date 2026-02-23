@@ -47,7 +47,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <span>📞</span>
-                <span>+ (57) 6-582-7070 Ext 140 </span>
+                <span>+ (57) 6-582-7070 Ext 140(Chatbot)</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span>📍</span>

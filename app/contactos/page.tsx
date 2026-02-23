@@ -8,59 +8,33 @@ export default function ContactoPage() {
   const [formData, setFormData] = useState({
     nombre: "",
     apellido: "",
-    empresa: "",
     telefono: "",
     mensaje: "",
   });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // 🔹 Validación manual
-  const validarFormulario = () => {
-    if (
-      !formData.nombre.trim() ||
-      !formData.apellido.trim() ||
-      !formData.telefono.trim() ||
-      !formData.mensaje.trim()
-    ) {
-      alert("Por favor completa todos los campos obligatorios (*)");
-      return false;
-    }
-    return true;
-  };
-
-  // 🔹 Envío a Gmail u Outlook
+  // 🔹 Función genérica para abrir Gmail u Outlook
   const handleSend = (service: "gmail" | "outlook") => {
-    if (!validarFormulario()) return;
-
-    const emailDestino = "centrodeinvestigacioncief@unisimon.edu.co";
-
-    const subject = encodeURIComponent(
-      `Mensaje de ${formData.nombre} ${formData.apellido}`
-    );
-
+    const emailDestino = "cief@unisimon.edu.co"; // ✅ cambia por tu correo real
+    const subject = encodeURIComponent(`Mensaje de ${formData.nombre} ${formData.apellido}`);
     const body = encodeURIComponent(
-      `Nombre: ${formData.nombre}
-Apellido: ${formData.apellido}
-Empresa: ${formData.empresa}
-Teléfono: ${formData.telefono}
-
-Mensaje:
-${formData.mensaje}`
+      `Nombre: ${formData.nombre}\nApellido: ${formData.apellido}\nTeléfono: ${formData.telefono}\n\nMensaje:\n${formData.mensaje}`
     );
 
     let url = "";
 
     if (service === "gmail") {
+      // 🔹 Gmail
       url = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailDestino}&su=${subject}&body=${body}`;
-    } else {
+    } else if (service === "outlook") {
+      // 🔹 Outlook Web
       url = `https://outlook.live.com/owa/?path=/mail/action/compose&to=${emailDestino}&subject=${subject}&body=${body}`;
     }
 
+    // 🔹 Abre en una nueva pestaña
     window.open(url, "_blank");
   };
 
@@ -76,88 +50,64 @@ ${formData.mensaje}`
 
           <div className="max-w-3xl mx-auto bg-white p-10 rounded-2xl shadow-2xl">
             <p className="text-gray-700 text-center mb-8 text-lg">
-              Completa el formulario y elige cómo deseas enviar tu mensaje.
-              <br />
-              <span className="text-red-600 font-semibold">*</span> Campos obligatorios
+              Completa el formulario y elige cómo deseas enviar tu mensaje:
             </p>
 
+            {/* 🔹 Formulario */}
             <form className="space-y-6">
-              {/* Nombre */}
               <div>
-                <label className="block text-gray-800 font-semibold mb-2">
-                  Nombre <span className="text-red-600">*</span>
-                </label>
+                <label className="block text-gray-800 font-semibold mb-2">Nombre</label>
                 <input
                   type="text"
                   name="nombre"
                   value={formData.nombre}
                   onChange={handleChange}
+                  required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFB000] focus:outline-none"
                   placeholder="Ingresa tu nombre"
                 />
               </div>
 
-              {/* Apellido */}
               <div>
-                <label className="block text-gray-800 font-semibold mb-2">
-                  Apellido <span className="text-red-600">*</span>
-                </label>
+                <label className="block text-gray-800 font-semibold mb-2">Apellido</label>
                 <input
                   type="text"
                   name="apellido"
                   value={formData.apellido}
                   onChange={handleChange}
+                  required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFB000] focus:outline-none"
                   placeholder="Ingresa tu apellido"
                 />
               </div>
 
-              {/* Empresa */}
               <div>
-                <label className="block text-gray-800 font-semibold mb-2">
-                  Empresa
-                </label>
-                <input
-                  type="text"
-                  name="empresa"
-                  value={formData.empresa}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFB000] focus:outline-none"
-                  placeholder="Ingresa el nombre de tu empresa"
-                />
-              </div>
-
-              {/* Teléfono */}
-              <div>
-                <label className="block text-gray-800 font-semibold mb-2">
-                  Teléfono <span className="text-red-600">*</span>
-                </label>
+                <label className="block text-gray-800 font-semibold mb-2">Teléfono</label>
                 <input
                   type="tel"
                   name="telefono"
                   value={formData.telefono}
                   onChange={handleChange}
+                  required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFB000] focus:outline-none"
                   placeholder="Ejemplo: +57 300 123 4567"
                 />
               </div>
 
-              {/* Mensaje */}
               <div>
-                <label className="block text-gray-800 font-semibold mb-2">
-                  Mensaje <span className="text-red-600">*</span>
-                </label>
+                <label className="block text-gray-800 font-semibold mb-2">Mensaje</label>
                 <textarea
                   name="mensaje"
                   value={formData.mensaje}
                   onChange={handleChange}
+                  required
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFB000] focus:outline-none resize-none"
                   placeholder="Escribe tu mensaje aquí..."
                 ></textarea>
               </div>
 
-              {/* Botones */}
+              {/* 🔹 Botones de envío */}
               <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8">
                 <button
                   type="button"

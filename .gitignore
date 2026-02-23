@@ -63,3 +63,6 @@ build/
 *.log
 *.tmp
 *.swp
+
+# Directorio de build de Next.js
+.next/

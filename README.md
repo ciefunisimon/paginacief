@@ -28,4 +28,3 @@ The project is fully synchronized with Vercel and deploys from the **main branch
 * **Source Branch:** `main`
 * **Vercel Status:** Ready Latest
 
-
