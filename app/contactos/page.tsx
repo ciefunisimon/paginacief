@@ -8,33 +8,59 @@ export default function ContactoPage() {
   const [formData, setFormData] = useState({
     nombre: "",
     apellido: "",
+    empresa: "",
     telefono: "",
     mensaje: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // 🔹 Función genérica para abrir Gmail u Outlook
+  // 🔹 Validación manual
+  const validarFormulario = () => {
+    if (
+      !formData.nombre.trim() ||
+      !formData.apellido.trim() ||
+      !formData.telefono.trim() ||
+      !formData.mensaje.trim()
+    ) {
+      alert("Por favor completa todos los campos obligatorios (*)");
+      return false;
+    }
+    return true;
+  };
+
+  // 🔹 Envío a Gmail u Outlook
   const handleSend = (service: "gmail" | "outlook") => {
-    const emailDestino = "cief@unisimon.edu.co"; // ✅ cambia por tu correo real
-    const subject = encodeURIComponent(`Mensaje de ${formData.nombre} ${formData.apellido}`);
+    if (!validarFormulario()) return;
+
+    const emailDestino = "centrodeinvestigacioncief@unisimon.edu.co";
+
+    const subject = encodeURIComponent(
+      `Mensaje de ${formData.nombre} ${formData.apellido}`
+    );
+
     const body = encodeURIComponent(
-      `Nombre: ${formData.nombre}\nApellido: ${formData.apellido}\nTeléfono: ${formData.telefono}\n\nMensaje:\n${formData.mensaje}`
+      `Nombre: ${formData.nombre}
+Apellido: ${formData.apellido}
+Empresa: ${formData.empresa}
+Teléfono: ${formData.telefono}
+
+Mensaje:
+${formData.mensaje}`
     );
 
     let url = "";
 
     if (service === "gmail") {
-      // 🔹 Gmail
       url = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailDestino}&su=${subject}&body=${body}`;
-    } else if (service === "outlook") {
-      // 🔹 Outlook Web
+    } else {
       url = `https://outlook.live.com/owa/?path=/mail/action/compose&to=${emailDestino}&subject=${subject}&body=${body}`;
     }
 
-    // 🔹 Abre en una nueva pestaña
     window.open(url, "_blank");
   };
 
@@ -50,64 +76,88 @@ export default function ContactoPage() {
 
           <div className="max-w-3xl mx-auto bg-white p-10 rounded-2xl shadow-2xl">
             <p className="text-gray-700 text-center mb-8 text-lg">
-              Completa el formulario y elige cómo deseas enviar tu mensaje:
+              Completa el formulario y elige cómo deseas enviar tu mensaje.
+              <br />
+              <span className="text-red-600 font-semibold">*</span> Campos obligatorios
             </p>
 
-            {/* 🔹 Formulario */}
             <form className="space-y-6">
+              {/* Nombre */}
               <div>
-                <label className="block text-gray-800 font-semibold mb-2">Nombre</label>
+                <label className="block text-gray-800 font-semibold mb-2">
+                  Nombre <span className="text-red-600">*</span>
+                </label>
                 <input
                   type="text"
                   name="nombre"
                   value={formData.nombre}
                   onChange={handleChange}
-                  required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFB000] focus:outline-none"
                   placeholder="Ingresa tu nombre"
                 />
               </div>
 
+              {/* Apellido */}
               <div>
-                <label className="block text-gray-800 font-semibold mb-2">Apellido</label>
+                <label className="block text-gray-800 font-semibold mb-2">
+                  Apellido <span className="text-red-600">*</span>
+                </label>
                 <input
                   type="text"
                   name="apellido"
                   value={formData.apellido}
                   onChange={handleChange}
-                  required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFB000] focus:outline-none"
                   placeholder="Ingresa tu apellido"
                 />
               </div>
 
+              {/* Empresa */}
               <div>
-                <label className="block text-gray-800 font-semibold mb-2">Teléfono</label>
+                <label className="block text-gray-800 font-semibold mb-2">
+                  Empresa
+                </label>
+                <input
+                  type="text"
+                  name="empresa"
+                  value={formData.empresa}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFB000] focus:outline-none"
+                  placeholder="Ingresa el nombre de tu empresa"
+                />
+              </div>
+
+              {/* Teléfono */}
+              <div>
+                <label className="block text-gray-800 font-semibold mb-2">
+                  Teléfono <span className="text-red-600">*</span>
+                </label>
                 <input
                   type="tel"
                   name="telefono"
                   value={formData.telefono}
                   onChange={handleChange}
-                  required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFB000] focus:outline-none"
                   placeholder="Ejemplo: +57 300 123 4567"
                 />
               </div>
 
+              {/* Mensaje */}
               <div>
-                <label className="block text-gray-800 font-semibold mb-2">Mensaje</label>
+                <label className="block text-gray-800 font-semibold mb-2">
+                  Mensaje <span className="text-red-600">*</span>
+                </label>
                 <textarea
                   name="mensaje"
                   value={formData.mensaje}
                   onChange={handleChange}
-                  required
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FFB000] focus:outline-none resize-none"
                   placeholder="Escribe tu mensaje aquí..."
                 ></textarea>
               </div>
 
-              {/* 🔹 Botones de envío */}
+              {/* Botones */}
               <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8">
                 <button
                   type="button"
@@ -136,4 +186,3 @@ export default function ContactoPage() {
     </div>
   );
 }
-
