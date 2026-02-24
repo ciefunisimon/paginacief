@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 import PaisesUniversidades from "@/components/paisesuniversidades";
 
 
@@ -175,7 +176,7 @@ export default function HomePage() {
         <section className="py-20 bg-[#68AB6A] text-white relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-bold mb-8 uppercase">
-              Relacionamiento Internacional
+              Relacionamiento Internacional 
             </h2>
 
             {/* 🗺️ Paises */}
@@ -338,31 +339,42 @@ export default function HomePage() {
     </h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 text-left">
-      {/* 📰 Noticias */}
       <div className="p-6 sm:p-8 border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-sm">
-        <h3 className="text-xl font-bold mb-2 text-[#FFB000]">
-          Noticias y Prensa
+        <h3 className="text-xl font-bold mb-2 text-[white]">
+          Ultimas Publicaciones
         </h3>
+
         <hr className="my-3 border-white/30" />
-        <ul className="space-y-3 text-white/90">
-          <li>📅 [10 Oct 2025] - noticia 1</li>
-          <li>📅 [5 Oct 2025] - noticia 2</li>
-          <li>📅 [28 Sep 2025] - noticia 3</li>
-        </ul>
-        <Link
-          href="/notieventos"
-          className="block mt-6 text-[#FFB000] hover:underline text-sm font-medium"
-        >
-          Ver Todas las Noticias →
-        </Link>
+
+        <div className="space-y-3 text-white/90">
+          <div data-behold-id="Y1e9Nkhq0bGIkA4fcIyE"></div>
+        </div>
+
+        <Script
+          src="https://w.behold.so/widget.js"
+          type="module"
+          strategy="lazyOnload"
+        />
+        <div className="mt-6 text-center">
+          <Link
+            href="/notieventos"
+            className="inline-block bg-[#FFB000] text-black px-6 py-2 rounded-full 
+                      font-semibold hover:bg-white hover:text-black 
+                      transition-all duration-300 shadow-md"
+          >
+            Ir a Noticias →
+          </Link>
+         </div>
+
       </div>
 
       {/* 📅 Agenda */}
       <div className="p-6 sm:p-8 border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-sm">
         {/* TÍTULO */}
-        <h3 className="text-xl font-bold mb-2 text-[#FFB000]">
+        <h3 className="text-xl font-bold mb-2 text-[white]">
           Mira Nuestros Eventos
         </h3>
+        
 
         <hr className="my-3 border-white/30" />
 
@@ -503,3 +515,4 @@ export default function HomePage() {
     </>
   );
 }
+
