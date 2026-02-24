@@ -10,9 +10,10 @@ import VisionSection from "@/components/VisionSection";
 import ObjetivosSection from "@/components/ObjetivosSection";
 import ValoresSection from "@/components/ValoresSection";
 import EurekaSection from "@/components/EurekaSection";
-import FeaturesSection from "@/components/features-section";
+//import FeaturesSection from "@/components/features-section";
 import DepartamentoInvestigacionCucuta from "@/components/departamento_investigacion_cucuta";
-import CentroInvestigacionCief from "@/components/Centro_investigacion_cief";
+//import CentroInvestigacionCief from "@/components/Centro_investigacion_cief";
+import Nuevo_organigrama from "@/components/nuevo_organigrama";
 
 export default function QuienesSomosPage() {
   return (
@@ -37,9 +38,10 @@ Su fundación responde a la necesidad de comprender y aportar soluciones a las r
         <ObjetivosSection />
         <ValoresSection />
         <EurekaSection />
-        <FeaturesSection />
+        {/* <FeaturesSection /> */}
         <DepartamentoInvestigacionCucuta />
-        <CentroInvestigacionCief />
+        {/* <CentroInvestigacionCief /> */}
+        <Nuevo_organigrama/>
       </main>
 
       {/* 🟡 Footer */}
