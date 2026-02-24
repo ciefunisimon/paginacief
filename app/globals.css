@@ -106,6 +106,14 @@ html {
   --color-input: var(--input);
   --color-ring: var(--ring);
 }
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 /* 🧩 Aplicación global */
 @layer base {
