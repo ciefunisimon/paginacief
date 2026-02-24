@@ -7,10 +7,10 @@ import Footer from "@/components/footer";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import Image from "next/image";
-import MapWorld from "@/components/MapCucuta";
+import PaisesUniversidades from "@/components/paisesuniversidades";
 
-// ✅ Mapa dinámico (solo cliente)
-const Map = dynamic(() => import("@/components/MapCucuta"), { ssr: false });
+
+
 
 // 🔹 Contador animado
 const Counter = ({ value, duration = 2 }: { value: number; duration?: number }) => {
@@ -170,7 +170,7 @@ export default function HomePage() {
           </div>
         </section>
 
-                {/* 🌍 NUESTRA ACCIÓN EN EL MUNDO */}
+                
         {/* 🌍 NUESTRA ACCIÓN EN EL MUNDO */}
         <section className="py-20 bg-[#68AB6A] text-white relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -178,9 +178,9 @@ export default function HomePage() {
               Nuestra acción en el mundo
             </h2>
 
-            {/* 🗺️ Nuevo mapa preciso */}
+            {/* 🗺️ Paises */}
             <div className="mx-auto mb-12">
-              <MapWorld />
+              <PaisesUniversidades />
             </div>
 
             {/* 📊 Estadísticas estilo infografía */}
@@ -290,21 +290,21 @@ export default function HomePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {[
                 {
-                  title: "POLICY LAB: Del Dato a la Solución",
-                  desc: "Espacio para organismos públicos y empresas. Busque diagnósticos y soluciones basadas en evidencia.",
+                  title: "PUBLICACIONES Y RECURSOS",
+                  desc: "Espacio para explorar articulos y recursos.",
                   link: "/policy",
                   btn: "Plantear un Reto Fronterizo",
                 },
                 {
-                  title: "OBSERVATORIO DE DATOS",
-                  desc: "Para investigadores y la academia. Acceso a datos filtrables, GrupLac y Directorio de Expertos.",
+                  title: "DIRECTORIO DE INVESTIGADORES",
+                  desc: "Acceso a directorio de expertos.",
                   link: "/directorio",
                   btn: "Acceder a la Base de Datos",
                 },
                 {
                   title: "CÁPSULAS DE CONOCIMIENTO (Video Hub)",
                   desc: "Divulgación pública de la ciencia en formato audiovisual.",
-                  link: "/publirecu",
+                  link: "/capsulas_video",
                   btn: "Ver el Video Más Reciente",
                 },
               ].map((card, i) => (
