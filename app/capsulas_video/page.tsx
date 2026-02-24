@@ -14,8 +14,10 @@ export default function VideosPage() {
     { title: "Migración, una mirada binacional desde lo humanitario", url: "https://www.youtube.com/embed/NLDpuW3sRL0" },
     { title: "Análisis de coyunturas fronterizas en y desde Colombia", url: "https://www.youtube.com/embed/hB2rffUzulM" },
     { title: "Frontera y Salud Mental", url: "https://www.youtube.com/embed/cDXNi-M6hSo" },
+    { title: "Convergencias migratorias: Experiencias y reflexiones en ciudades fronterizas de América Latina", url: "https://www.youtube.com/embed/qyd61WZDyD8" },
     { title: "Autoconfianza de los Emprendedores Migrantes Venezolanos en Colombia", url: "https://www.youtube.com/embed/8eiQ0SdRiq8" },
     { title: "Investigación en Intervención Regresiva Reconstructiva (TRR) en el Consumo de Tabaco", url: "https://www.youtube.com/embed/yq3lAnp_L1U" },
+    
   ];
 
   const cajas = [
