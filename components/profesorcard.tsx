@@ -15,6 +15,7 @@ interface ProfesorCardProps {
   categoria: string;
   links?: Links;
   temas: string[];
+  fotoPosicion?: string;
 }
 
 const ProfesorCard: React.FC<ProfesorCardProps> = ({
@@ -23,6 +24,7 @@ const ProfesorCard: React.FC<ProfesorCardProps> = ({
   correo,
   links,
   temas,
+  fotoPosicion,
 }) => {
   return (
     <div
@@ -40,7 +42,12 @@ const ProfesorCard: React.FC<ProfesorCardProps> = ({
           w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-44 lg:h-44
         "
       >
-        <img src={foto} alt={nombre} className="w-full h-full object-cover" />
+        <img
+          src={foto}
+          alt={nombre}
+          className={`w-full h-full object-cover ${fotoPosicion ?? "object-top"}`}
+        />
+
       </div>
 
       {/* NOMBRE */}
@@ -56,7 +63,7 @@ const ProfesorCard: React.FC<ProfesorCardProps> = ({
         </a>
       </p>
 
-      {/* CONTENIDO SCROLLEABLE (SIN BARRA) */}
+      {/* CONTENIDO SCROLLEABLE */}
       <div
         className="
           mt-4 text-left overflow-y-scroll
@@ -64,11 +71,10 @@ const ProfesorCard: React.FC<ProfesorCardProps> = ({
           flex-1
         "
         style={{
-          msOverflowStyle: "none", // IE
-          scrollbarWidth: "none", // Firefox
+          msOverflowStyle: "none",
+          scrollbarWidth: "none",
         }}
       >
-        {/* HIDE SCROLL FOR CHROME/EDGE/SAFARI */}
         <style>{`
           .scrollbar-hide::-webkit-scrollbar {
             display: none;
@@ -76,36 +82,50 @@ const ProfesorCard: React.FC<ProfesorCardProps> = ({
         `}</style>
 
         {/* ÍCONOS */}
-        <div className="flex items-center justify-center gap-4 my-4">
-          {links?.cvlac && (
-            <a href={links.cvlac} target="_blank">
-              <img src="/CvLAC.png" className="w-8 sm:w-9 md:w-10" />
-            </a>
-          )}
-          {links?.scopus && (
-            <a href={links.scopus} target="_blank">
-              <img src="/Scopus.png" className="w-8 sm:w-9 md:w-10" />
-            </a>
-          )}
-          {links?.orcid && (
-            <a href={links.orcid} target="_blank">
-              <img src="/orcidd.png" className="w-8 sm:w-9 md:w-10" />
-            </a>
-          )}
-          {links?.researchgate && (
-            <a href={links.researchgate} target="_blank">
-              <img src="/ResearchGate.png" className="w-8 sm:w-9 md:w-10" />
-            </a>
-          )}
-          {links?.scholar && (
-            <a href={links.scholar} target="_blank">
-              <img src="/Google_Scholar.png" className="w-8 sm:w-9 md:w-10" />
-            </a>
-          )}
+        <div className="mt-4 flex justify-center">
+          <div
+            className="
+              bg-white/90
+              rounded-xl
+              px-3 py-1
+              flex items-center gap-4
+              shadow-sm
+            "
+          >
+            {links?.cvlac && (
+              <a href={links.cvlac} target="_blank">
+                <img src="/CvLAC.png" className="w-8 sm:w-9 md:w-10" />
+              </a>
+            )}
+
+            {links?.scopus && (
+              <a href={links.scopus} target="_blank">
+                <img src="/Scopus.png" className="w-8 sm:w-9 md:w-10" />
+              </a>
+            )}
+
+            {links?.orcid && (
+              <a href={links.orcid} target="_blank">
+                <img src="/orcidd.png" className="w-8 sm:w-9 md:w-10" />
+              </a>
+            )}
+
+            {links?.researchgate && (
+              <a href={links.researchgate} target="_blank">
+                <img src="/ResearchGate.png" className="w-8 sm:w-9 md:w-10" />
+              </a>
+            )}
+
+            {links?.scholar && (
+              <a href={links.scholar} target="_blank">
+                <img src="/Google_Scholar.png" className="w-8 sm:w-9 md:w-10" />
+              </a>
+            )}
+          </div>
         </div>
 
         {/* TEMAS */}
-        <h3 className="font-semibold text-gray-800 mb-2">
+        <h3 className="font-semibold text-gray-800 mb-2 mt-4">
           Temas de investigación
         </h3>
 
@@ -120,4 +140,5 @@ const ProfesorCard: React.FC<ProfesorCardProps> = ({
 };
 
 export default ProfesorCard;
+
 
