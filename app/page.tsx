@@ -175,7 +175,7 @@ export default function HomePage() {
         <section className="py-20 bg-[#68AB6A] text-white relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-bold mb-8 uppercase">
-              Nuestra acción en el mundo
+              Relacionamiento Internacional
             </h2>
 
             {/* 🗺️ Paises */}
