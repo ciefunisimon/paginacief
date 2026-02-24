@@ -1016,7 +1016,7 @@ export default function DirectorioProfesores() {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto opacity-90 leading-relaxed text-white">
-            Consulta la información de cada profesor vinculado al CIEF (redes académicas y temas de investigación).
+            Consulta la información de cada investigador vinculado al CIEF (redes académicas y temas de investigación).
           </p>
         </section>
 
