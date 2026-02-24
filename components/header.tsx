@@ -15,6 +15,7 @@ const navigation = [
   { name: "Impacto y Colaboración", href: "/impacto" },
   { name: "Publicaciones y Recursos", href: "/publirecu" },
   { name: "Noticias y Eventos", href: "/notieventos" },
+  { name: "Redes de Colaboración", href: "/redes_colaboracion" },
   { name: "Contacto ", href: "/contactos" },
 ];
 
@@ -65,7 +66,8 @@ export default function Header({ transparent = false }: HeaderProps) {
           </div>
 
           {/* 🔸 Navegación escritorio (más flexible y con menor padding) */}
-          <div className="hidden lg:flex flex-wrap justify-end gap-3">
+          <div className="hidden lg:flex flex-1 min-w-0 justify-end">
+            <div className="flex gap-3 overflow-x-auto scrollbar-hide whitespace-nowrap">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -75,6 +77,7 @@ export default function Header({ transparent = false }: HeaderProps) {
                 {item.name}
               </Link>
             ))}
+            </div>
           </div>
 
           {/* 🔸 Menú móvil */}
@@ -95,10 +98,10 @@ export default function Header({ transparent = false }: HeaderProps) {
         {/* 🔹 Menú móvil desplegable */}
         <div
           className={`lg:hidden transition-all duration-300 overflow-hidden ${
-            isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+            isMobileMenuOpen ? "max-h-[70vh] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
-          <div className="bg-white shadow-lg rounded-lg mt-2 py-4 px-4 space-y-3">
+          <div className="bg-white shadow-lg rounded-lg mt-2 py-4 px-4 space-y-3 max-h-[65vh] overflow-y-auto scrollbar-hide">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -115,6 +118,7 @@ export default function Header({ transparent = false }: HeaderProps) {
     </header>
   );
 }
+
 
 
 
