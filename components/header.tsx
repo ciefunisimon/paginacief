@@ -15,7 +15,7 @@ const navigation = [
   { name: "Impacto y Colaboración", href: "/impacto" },
   { name: "Publicaciones y Recursos", href: "/publirecu" },
   { name: "Noticias y Eventos", href: "/notieventos" },
-  { name: "Redes de Colaboración", href: "/redes_colaboracion" },
+  { name: "Redes de Colaboración", href: "/" },
   { name: "Contacto ", href: "/contactos" },
 ];
 
