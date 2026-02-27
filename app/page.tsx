@@ -341,7 +341,7 @@ export default function HomePage() {
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 text-left">
       <div className="p-6 sm:p-8 border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-sm">
         <h3 className="text-xl font-bold mb-2 text-[white]">
-          Ultimas Publicaciones
+          Últimas Publicaciones
         </h3>
 
         <hr className="my-3 border-white/30" />
