@@ -6,23 +6,23 @@ export default function OrganigramaCucuta() {
   const nivel2 = [
     { nombre: "Miembros del comité", cargo: "Comité Científico - Cúcuta" },
     {
-      nombre: "Neida Albornoz A.",
+      nombre: "Neida Albornoz Arias",
       cargo: "Centro de Investigación en Estudios Fronterizos - CIEF",
     },
-    { nombre: "Carolina Ramírez M.", cargo: "Unidad de Proyectos" },
+    { nombre: "Carolina Ramirez Martínez", cargo: "Unidad de Proyectos" },
   ];
 
   const nivel3 = [
     {
       nombre: "José María Rincón",
-      cargo: "Coordinación de Formación para la Investigación - Proyecto",
+      cargo: "Coordinación de Formación para la Investigación (pregrado)",
     },
     {
-      nombre: "Jovany Gómez V.",
-      cargo: "Coordinación de Formación para la Investigación - Pedagogía",
+      nombre: "Jovany Gómez Vahos ",
+      cargo: "Coordinación de Investigación (posgrado).",
     },
     {
-      nombre: "Nidia Bonilla",
+      nombre: "Nidia Johana Bonilla Cruz",
       cargo: "Coordinación del Programa Institucional de Semilleros",
     },
     {
@@ -158,3 +158,4 @@ export default function OrganigramaCucuta() {
     </section>
   );
 }
+
