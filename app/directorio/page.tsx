@@ -20,7 +20,7 @@ export default function DirectorioProfesores() {
 
      {
       foto: "/manuel_riano.jpeg",
-      nombre: " Manuel Ernesto Riaño Garzon  ",
+      nombre: " Manuel Ernesto Riaño Garzón  ",
       correo: " manuel.riano@unisimon.edu.co ",
       categoria: "senior", 
       links: {
@@ -59,7 +59,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/johel_rodriguez.jpg",
-      nombre: " Johel Enrique Rodriguez Fernandez   ",
+      nombre: " Johel Enrique Rodríguez Fernández  ",
       correo: " johel.rodriguez@unisimon.edu.co ",
       categoria: "senior", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
@@ -116,7 +116,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/juandiego_hernandez.jpg",
-      nombre: " Juan Diego Hernández Albarracin    ",
+      nombre: " Juan Diego Hernández Albarracín",
       correo: " juan.hernandeza@unisimon.edu.co ",
       categoria: "senior", 
       links: {
@@ -127,7 +127,7 @@ export default function DirectorioProfesores() {
         scholar: "https://scholar.google.es/citations?user=DECmTOjjVVQC&hl=es&oi=ao"
         
       },
-      temas: [
+      temas: [  
         "Filosofía de la educación",
         "Comunicación, territorio y desarrollo social",
         "Innovación, educación y tecnología social",
@@ -141,7 +141,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/yurley_hernandez.jpg",
-      nombre: " Yurley Karime Hernandez Peña  ",
+      nombre: " Yurley Karime Hernández Peña  ",
       correo: " yurley.hernandez@unisimon.edu.co ",
       categoria: "senior", 
       links: {
@@ -160,7 +160,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/marcela_florez.jpeg",
-      nombre: " Marcela Leonor Florez Romero   ",
+      nombre: " Marcela Leonor Flórez Romero   ",
       correo: " marcela.florez@unisimon.edu.co ",
       categoria: "senior", 
       links: {
@@ -198,7 +198,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/jovany_gomez.jpeg",
-      nombre: " Jovany Gómez Vahos   ",
+      nombre: " Jovany Gómez Vahos  ",
       correo: " jovany.gomez@unisimon.edu.co ",
       categoria: "senior", 
       links: {
@@ -219,7 +219,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/jesus_oreste.jpeg",
-      nombre: " Jesus Oreste Forgiony Santos  ",
+      nombre: " Jesús Oreste Forgiony Santos  ",
       correo: " jesus.forgiony@unisimon.edu.co ",
       categoria: "senior", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
@@ -238,7 +238,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/franklin_espinosa.jpg",
-      nombre: " Jhon Franklin Espinosa Castro   ",
+      nombre: " Jhon Franklin Espinosa Castro ",
       correo: " jhon.espinosa@unisimon.edu.co ",
       categoria: "senior", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
@@ -255,7 +255,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/oscar_medina.JPG",
-      nombre: " Oscar Dario Medina Ortiz    ",
+      nombre: "  Óscar Darío Medina Ortiz  ",
       correo: " oscar.medina@unisimon.edu.co ",
       categoria: "senior", 
       links: {
@@ -296,7 +296,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/myriam_carreno.jpg",
-      nombre: " Myriam Teresa Carreño Paredes ",
+      nombre: " Myriam Teresa Carreño Paredes",
       correo: " myriam.carreno@unisimon.edu.co ",
       categoria: "asociado", 
       links: {
@@ -316,7 +316,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/doris_palma.jpeg",
-      nombre: " Doris Rocio Palma Suárez  ",
+      nombre: " Doris Rocío Palma Suárez ",
       correo: " rocio.palma@unisimon.edu.co ",
       categoria: "asociado", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
@@ -354,7 +354,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/franlet_araque.png",
-      nombre: " Franlet Rocio Araque Castellanos  ",
+      nombre: " Franlet Rocío Araque Castellanos",
       correo: " franlet.araque@unisimon.edu.co ",
       categoria: "asociado", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
@@ -375,7 +375,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/maria_martinez.jpeg",
-      nombre: " Maria Carolina Martinez Santana   ",
+      nombre: " María Carolina Martínez Santana  ",
       correo: " mariac.martinez@unisimon.edu.co ",
       categoria: "asociado", 
       links: {
@@ -415,7 +415,7 @@ export default function DirectorioProfesores() {
     }, 
     {
       foto: "/Sheyla_Herrera.jpg",
-      nombre: " Sheyla Vanessa Herrera Martinez  ",
+      nombre: " Sheyla Vanessa Herrera Martínez  ",
       correo: " sheyla.herrera@unisimon.edu.co ",
       categoria: "asociado", 
       links: {
@@ -433,7 +433,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/nohora_alvarez.jpg",
-      nombre: " Nohora Elizabeth Álvarez Rey  ",
+      nombre: " Nohora Elizabeth Álvarez Rey ",
       correo: " nohora.alvarezr@unisimon.edu.co ",
       categoria: "asociado", 
       links: {
@@ -453,7 +453,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/anderson_florez.jpg",
-      nombre: " Anderson Smith Florez Fuentes   ",
+      nombre: " Anderson Smith Flórez Fuentes  ",
       correo: " anderson.florez@unisimon.edu.co ",
       categoria: "asociado", 
       links: {
@@ -528,7 +528,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/luis_suarez2.jpeg",
-      nombre: " Luis Arnulfo Suarez Espitia   ",
+      nombre: " Luis Arnulfo Suárez Espitia  ",
       correo: " luis.suareze@unisimon.edu.co ",
       categoria: "junior", 
       links: {
@@ -548,7 +548,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/Raquel_Rivera.jpg",
-      nombre: " Raquel Rivera Ortega   ",
+      nombre: " Raquel Rivera Ortega  ",
       correo: " raquel.rivera@unisimon.edu.co ",
       categoria: "junior", 
       links: {
@@ -568,7 +568,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/frank_stewars2.jpeg",
-      nombre: " Frank Steward Orduz Gualdron    ",
+      nombre: " Frank Steward Orduz Gualdrón  ",
       correo: " frank.orduz@unisimon.edu.co ",
       categoria: "junior", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
@@ -604,7 +604,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/maria_bautista.jpeg",
-      nombre: " Maria Judith Bautista Sandoval   ",
+      nombre: " María Judith Bautista Sandoval   ",
       correo: " mariaj.bautista@unisimon.edu.co ",
       categoria: "junior", 
       links: {
@@ -625,7 +625,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/Orlando_Gonzalez.jpeg",
-      nombre: " Orlando Gonzalez Gutierrez   ",
+      nombre: " Orlando González Gutiérrez  ",
       correo: " orlando.gonzalezg@unisimon.edu.co ",
       categoria: "junior", 
       links: {
@@ -704,7 +704,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/hector_vanegas.jpg",
-      nombre: " Héctor Daniel Vanegas Sáenz  ",
+      nombre: "Héctor Daniel Vanegas Sáenz ",
       correo: " hector.vanegass@unisimon.edu.co ",
       categoria: "junior", 
       links: {
@@ -725,7 +725,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/jose_hernandez.jpeg",
-      nombre: " Jose Antonio Hernandez Ramirez  ",
+      nombre: " José Antonio Hernández Ramírez  ",
       correo: " jose.hernandezr@unisimon.edu.co ",
       categoria: "junior", 
       links: {
@@ -786,7 +786,7 @@ export default function DirectorioProfesores() {
     
     {
       foto: "/fabian_cubillos.jpeg",
-      nombre: " Fabian Enrique Cubillos Álvarez    ",
+      nombre: " Fabián Enrique Cubillos Álvarez   ",
       correo: " fabian.cubillos@unisimon.edu.co ",
       categoria: "sin_categoria", // <<--- AGREGA LA CATEGORÍA AQUÍ
       links: {
@@ -849,7 +849,7 @@ export default function DirectorioProfesores() {
     },
      {
       foto: "/yaritza_martinez.jpeg",
-      nombre: " Leydi Yaritza Martinez Pardo     ",
+      nombre: " Leydi Yaritza Martínez Pardo   ",
       correo: " leydi.martinezb@unisimon.edu.co ",
       categoria: "sin_categoria", 
       links: {
@@ -887,7 +887,7 @@ export default function DirectorioProfesores() {
      
     {
       foto: "/omaira_bernal.jpg",
-      nombre: " Omaira Suarez Bernal ",
+      nombre: " Omaira Suárez Bernal ",
       correo: " omaira.suarezb@unisimon.edu.co ",
       categoria: "sin_categoria", 
       links: {
@@ -905,7 +905,7 @@ export default function DirectorioProfesores() {
     },
     {
       foto: "/omar_rozo.jpeg",
-      nombre: " Omar Rozo Perez  ",
+      nombre: " Omar Rozo Pérez  ",
       correo: " omar.rozo@unisimon.edu.co ",
       categoria: "sin_categoria", 
       links: {
@@ -943,7 +943,7 @@ export default function DirectorioProfesores() {
     
     {
       foto: "/sandra_duran.jpeg",
-      nombre: " Sandra Johanna Duran Rondon    ",
+      nombre: " Sandra Johanna Durán Rondón   ",
       correo: " sandra.duranr@unisimon.edu.co ",
       categoria: "sin_categoria", 
       links: {
@@ -1035,4 +1035,6 @@ export default function DirectorioProfesores() {
     </div>
   );
 }
+
+
 
