@@ -42,8 +42,8 @@ export default function InscripcionesPage() {
       <main className="flex-grow">
         {/* 🟩 Hero institucional */}
         <Heroo
-          title="Dimensiones de trabajo"
-          subtitle="El Centro de Investigación en Estudios Fronterizos contribuye con los desafíos de la gobernanza, gobernabilidad y desarrollo fronterizo en torno a tres dimensiones."
+          title="líneas de investigación del centro"
+          subtitle="El Centro de Investigación en Estudios Fronterizos contribuye con los desafíos de la gobernanza, gobernabilidad y desarrollo fronterizo en torno a tres líneas."
           image="/cucuta_aereo.jpg"
         />
 
