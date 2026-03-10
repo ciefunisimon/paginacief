@@ -14,6 +14,11 @@ export default function Videos2025Page() {
         "Panel 2: El desplazamiento forzado en América Latina, con perspectivas desde México\nFecha: 27 de mayo de 2025",
       url: "https://www.youtube.com/embed/8u3gDOarlsU",
     },
+    {
+      title:
+        "CIINATIC 2025 | Primera jornada de conferencias\nFecha: 13 noviembre de 2025",
+      url: "https://www.youtube.com/embed/UtZOGM2zaP4",
+    },
   ];
 
   return (
