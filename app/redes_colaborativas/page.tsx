@@ -37,25 +37,25 @@ export default function RedcienPage() {
       titulo: "Formación y actualización editorial",
       icon: <FaBook size={28} />,
       texto:
-        "Desarrollo de eventos certificados como diplomados, talleres, seminarios, simposios y encuentros para mejorar las competencias en procesos y gestión editorial."
+        "Desarrollo de programas certificados (diplomados, talleres, simposios) para potenciar las competencias en gestión editorial."
     },
     {
       titulo: "Cooperación interinstitucional",
       icon: <FaUsers size={28} />,
       texto:
-        "Creación de mecanismos de colaboración entre autores, editores, compiladores de instituciones educativas, empresas, centros y grupos de investigación, para optimizar recursos, desarrollar proyectos, eventos y compartir buenas prácticas editoriales."
+        "Alianzas entre centros de investigación y empresas para optimizar recursos, compartir buenas prácticas y desarrollar proyectos conjuntos."
     },
     {
       titulo: "Mejora de la calidad editorial",
       icon: <FaCheckCircle size={28} />,
       texto:
-        "Implementación de normas y criterios de publicación alineados con estándares nacionales e internacionales."
+        "Implementación de normativas y criterios técnicos de publicación alineados con exigencias globales."
     },
     {
       titulo: "Fortalecimiento de visibilidad e indexación",
       icon: <FaGlobe size={28} />,
       texto:
-        "Gestión de estrategias para el registro de revistas en diferentes plataformas o consorcios científicos de alto reconocimiento."
+        "Gestión de estrategias para el registro de revistas en plataformas y consorcios científicos de alto reconocimiento mundial."
     }
   ];
 
@@ -63,7 +63,7 @@ export default function RedcienPage() {
     <>
       <Header />
 
-      <main className="min-h-screen bg-[#28A59F] py-30 px-4 sm:px-6 lg:px-8">
+      <main className="min-h-screen bg-[#68AB6A] py-30 px-4 sm:px-6 lg:px-8">
 
         <div className="max-w-6xl mx-auto text-white">
 
@@ -74,13 +74,15 @@ export default function RedcienPage() {
             variants={fadeUp}
             className="mb-20 flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left"
           >
+            {/* FRANJA BLANCA */}
+          <div className="bg-[#FFB000] rounded-2xl px-8 py-6 shadow-lg flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left"> 
 
             <motion.div
               whileHover={{ scale: 1.08, rotate: 2 }}
               transition={{ type: "spring", stiffness: 200 }}
             >
               <Image
-                src="/LogoREDCIEN-Negro.png"
+                src="/logoredcien.png"
                 alt="Logo REDCIEN"
                 width={140}
                 height={140}
@@ -93,9 +95,9 @@ export default function RedcienPage() {
               <br className="hidden sm:block" />
               del Norte de Santander
             </h1>
-
-          </motion.section>
-
+          </div>
+           </motion.section>
+        
 
           {/* PRESENTACIÓN */}
           <motion.section
@@ -103,33 +105,71 @@ export default function RedcienPage() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="bg-white text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
+            className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
           >
 
-            <h2 className="text-2xl font-bold mb-6 text-[#28A59F]">
+            <h2 className="text-2xl font-bold mb-6 text-[#FFFFFF]">
               Que es la REDCIEN
             </h2>
 
             <p className="mb-4 leading-relaxed">
-              <strong>La Red de Editores Científicos del Norte de Santander - REDCIEN</strong>
-              iniciativa interinstitucional orientada al fortalecimiento de las publicaciones académicas y científicas en diferentes ámbitos. 
-              El propósito es promover la calidad editorial, la visibilidad de la producción investigativa y la cooperación entre instituciones educativas, empresas y el estado. 
-              A través de espacios de formación, intercambio de ideas, gestión y prácticas editoriales, articulación regional desde <strong>REDCIEN</strong>.
+              <strong>REDCIEN</strong> es una iniciativa interinstitucional pionera en el departamento de Norte de Santander, orientada al fortalecimiento y la excelencia de las publicaciones académicas y científicas.
+              Actuamos como un ecosistema de articulación entre <strong>instituciones educativas, empresas y el Estado</strong>, promoviendo la calidad editorial y la visibilidad de la producción investigativa regional
+              bajo estándares nacionales e internacionales.
+
             </p>
 
             <p className="leading-relaxed">
-              Tiene por objetivo principal la consolidación de un espacio de articulación entre las instituciones educativas,
-              empresas, entes gubernamentales, investigadores, centros y grupos de investigación, promoviendo estándares de calidad editorial y fomentando la visibilidad de las publicaciones académicas y científicas.
+              <strong>Nuestra Misión:</strong> Consolidar un referente estratégico para editores, investigadores y autores, mejorando los procesos de indexación y
+              el impacto de la ciencia en los ámbitos académico, social y económico.
             </p>
 
           </motion.section>
 
 
           {/* LINEAS DE ACCIÓN */}
+                  <AnimatePresence>
+          {modal && (
+            <motion.div
+              className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <motion.div
+                className="bg-white text-black max-w-lg w-full rounded-2xl p-8 relative"
+                initial={{ scale: 0.8 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0.8 }}
+              >
+
+                <button
+                  onClick={() => setModal(null)}
+                  className="absolute top-4 right-4 text-gray-500 hover:text-black"
+                >
+                  <FaTimes size={20} />
+                </button>
+
+                <div className="text-[#68AB6A] mb-4">
+                  {modal.icon}
+                </div>
+
+                <h3 className="text-xl font-bold mb-4">
+                  {modal.titulo}
+                </h3>
+
+                <p className="leading-relaxed">
+                  {modal.texto}
+                </p>
+
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
           <section className="mb-16">
 
             <h2 className="text-2xl font-bold mb-10 text-center text-white">
-              Líneas de Acción
+              Ejes Estratégicos: Líneas de Acción
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -139,20 +179,20 @@ export default function RedcienPage() {
                 <motion.div
                   key={i}
                   whileHover={{ scale: 1.04 }}
-                  className="bg-white text-black rounded-2xl p-6 shadow-lg flex flex-col justify-between"
+                  className="bg-[#FFB000] text-black rounded-2xl p-6 shadow-lg flex flex-col justify-between"
                 >
 
                   <div>
 
-                    <div className="text-[#28A59F] mb-4">
+                    <div className="text-[#68AB6A] mb-4">
                       {item.icon}
                     </div>
 
-                    <h3 className="font-bold text-lg mb-3 text-[#28A59F]">
+                    <h3 className="font-bold text-lg mb-3 text-black">
                       {item.titulo}
                     </h3>
 
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-black-600">
                       Haz clic en ver más para conocer detalles.
                     </p>
 
@@ -160,7 +200,7 @@ export default function RedcienPage() {
 
                   <button
                     onClick={() => setModal(item)}
-                    className="mt-6 bg-black text-white px-4 py-2 rounded-full font-semibold hover:opacity-90"
+                    className="mt-6 bg-[#68AB6A] text-white px-4 py-2 rounded-full font-semibold hover:opacity-90"
                   >
                     Ver más
                   </button>
@@ -173,25 +213,37 @@ export default function RedcienPage() {
 
           </section>
 
-
+          <h2 className="text-2xl font-bold mb-10 text-center text-white">
+              Gobernanza y Estructura
+            </h2>
           {/* COMITÉ */}
           <motion.section
             variants={fadeUp}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="bg-white text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
+            className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
           >
 
-            <h2 className="text-2xl font-bold mb-6 text-[#28A59F]">
+            <h2 className="text-2xl font-bold mb-6 text-white">
               Comité REDCIEN
             </h2>
 
             <p className="mb-6 leading-relaxed">
-              El Comité Central de la Red de Editores Científicos de la Región Norte (<strong>REDCIEN</strong>) es el órgano de dirección estratégica encargado de la planificación,
-              coordinación y seguimiento de las acciones estructurales de la red. Además, para garantizar la operatividad de las actividades, articulación estrategias o propuestas,
-              y toma de decisiones, en concordancia con las líneas de acción de REDCIEN, debido a la experiencia desde lo académico, investigativo, científico y ético, que es fundamental en procesos editoriales. 
-              Este comité establece lineamientos, define prioridades y actúa como instancia de gobernanza, asegurando la sostenibilidad, apropiación y divulgación de la red.
+              Es el órgano máximo de gobernanza, encargado de la planificación y seguimiento de las acciones estructurales. Su labor asegura que cada decisión
+              esté respaldada por la experiencia científica y académica.
+            </p>
+
+             <p className="text-2xl font-bold mb-6 text-white">
+              Configuración del Comité:
+            </p>
+
+            <p className="mb-6 leading-relaxed">
+              <strong>•	Presidencia y Vicepresidencia.</strong>
+            </p>
+
+            <p className="mb-6 leading-relaxed">
+              <strong>•	7 Áreas de Gestión Especializadas: Correspondientes a los ejes estratégicos de la red.</strong>
             </p>
 
           </motion.section>
@@ -203,25 +255,41 @@ export default function RedcienPage() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="bg-white text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
+            className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
           >
 
-            <h2 className="text-2xl font-bold mb-6 text-[#28A59F]">
-              Criterios de Inscripción
+            <h2 className="text-2xl font-bold mb-6 text-white">
+              Únete a la Red: Criterios de Inscripción
             </h2>
 
             <p className="mb-6 leading-relaxed">
-              es fundamental cumplir con ciertos criterios e información personal, académica, investigativa o científica, asegurando que quienes se integren compartan un compromiso desde el respeto, la ética y el trabajo colaborativo entre pares.
-              Estos criterios están pensados para reunir a personas con experiencia en el ámbito académico, investigativo, científico y editorial, que deseen aportar activamente al crecimiento de la red. La inscripción se realiza mediante la postulación, 
-              que será revisada por el Comité, con el fin de asegurar que cada nuevo integrante se ajuste a las líneas de acción de <strong>REDCIEN</strong>. Es decir, la inscripción será validada y aprobada por el Comité.
+              Invitamos a profesionales de instituciones educativas, empresas públicas/privadas e investigadores de Cúcuta 
+              y Norte de Santander a sumarse a este ecosistema.
             </p>
+
+            <p className="text-2xl font-bold mb-6 text-white">
+              Proceso de Postulación:
+            </p>
+
+            <p className="mb-6 leading-relaxed">
+              <strong>1. Perfil: </strong>Experiencia demostrable en ámbitos académicos, científicos o editoriales.
+            </p>
+
+            <p className="mb-6 leading-relaxed">
+              <strong>2. Valores: </strong>Compromiso con el respeto, la ética y el trabajo colaborativo entre pares.
+            </p>
+
+            <p className="mb-6 leading-relaxed">
+              <strong>3. 	Validación:  </strong>Todas las inscripciones son revisadas y aprobadas por <strong>el Comité Central</strong> para asegurar la alineación con nuestras líneas de acción.
+            </p>
+
 
             <div className="flex justify-center">
               <motion.div whileHover={{ scale: 1.05 }}>
                 <Link
                   href="https://forms.office.com/r/u0jAszNkj3"
                   target="_blank"
-                  className="bg-black text-white px-8 py-3 rounded-full font-bold shadow-lg"
+                  className="bg-[#68AB6A] text-white px-8 py-3 rounded-full font-bold shadow-lg"
                 >
                   Inscribirse en REDCIEN →
                 </Link>
@@ -241,12 +309,12 @@ export default function RedcienPage() {
           >
 
             <h2 className="text-2xl font-bold mb-6">
-              Productos
+              Centro de Documentación y Contacto
             </h2>
 
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="inline-block bg-white text-[#28A59F] px-8 py-6 rounded-xl shadow-lg"
+              className="inline-block bg-[#FFB000] text-black px-8 py-6 rounded-xl shadow-lg"
             >
               <motion.p className="text-4xl font-bold">
                 {rounded}
@@ -255,8 +323,65 @@ export default function RedcienPage() {
               <p className="text-sm mt-2">
                 divulgaciones científicas para la comunidad Unisimón
               </p>
+
+               
             </motion.div>
 
+          </motion.section>
+
+           <motion.section
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
+          >
+              <p className="text-2xl font-bold mb-6 text-white">
+              Nuestra Documentacion
+            </p>
+
+            <p className="mb-6 leading-relaxed">
+              Ponemos a disposición los documentos fundamentales de nuestra constitución:
+            </p>
+
+            <p className="mb-6 leading-relaxed">
+              •	📄 <strong>Acta de Constitución</strong>
+            </p>
+
+            <p className="mb-6 leading-relaxed">
+              •	📄 <strong>Acuerdo de Voluntades</strong>
+            </p>
+
+            <p className="mb-6 leading-relaxed">
+              •	📄 <strong>Carta de Compromiso</strong>
+            </p>
+
+            <p className="text-2xl font-bold mb-6 text-white">
+              Información de Contacto:
+            </p>
+
+            <p className="mb-6 leading-relaxed">
+              <strong>•	Entidad Fundadora: Universidad Simón Bolívar</strong>
+            </p>
+
+             <p className="mb-6 leading-relaxed">
+              <strong>•	📍 Ubicación: Cúcuta, Norte de Santander.</strong>
+            </p>
+
+             <p className="mb-6 leading-relaxed">
+              <strong>•	📧 Correo: redcien@unisimon.edu.co</strong>
+            </p>
+
+            <section className="flex justify-center mt-16 text-white">
+
+                <a
+                  href="mailto:redcien@unisimon.edu.co"
+                  className="bg-[#68AB6A] text-white px-8 py-3 rounded-full font-bold shadow-lg"
+                >
+                  Contactar a REDCIEN ✉
+                </a>
+
+              </section>
           </motion.section>
 
 
@@ -273,20 +398,20 @@ export default function RedcienPage() {
               {/* LIDER */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="bg-white text-black rounded-2xl shadow-lg p-8 text-center"
+                className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-8 text-center"
               >
 
                 <div className="flex justify-center mb-4">
                   <Image
                     src="/franklin_espinosa.jpg"
                     alt="Jhon Franklin Espinosa Castro"
-                    width={120}
+                    width={150}
                     height={120}
-                    className="rounded-full object-cover border-4 border-[#28A59F]"
+                    className="rounded-full object-cover border-4 border-[#68AB6A]"
                   />
                 </div>
 
-                <h3 className="font-bold text-lg text-[#28A59F]">
+                <h3 className="font-bold text-lg text-white">
                   Jhon Franklin Espinosa Castro
                 </h3>
 
@@ -294,9 +419,8 @@ export default function RedcienPage() {
                   Líder de REDCIEN
                 </p>
 
-                <p className="text-sm text-gray-600 mt-2">
-                  Coordinador de Publicaciones,
-                  Universidad Simón Bolívar – sede Cúcuta
+                <p className="text-sm text-black-600 mt-2">
+                  Coordinador de Publicaciones, Unisimón Cúcuta
                 </p>
 
               </motion.div>
@@ -306,20 +430,20 @@ export default function RedcienPage() {
               {/* CO LIDER */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="bg-white text-black rounded-2xl shadow-lg p-8 text-center"
+                className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-8 text-center"
               >
 
                 <div className="flex justify-center mb-4">
                   <Image
                     src="/manuel_riano.jpeg"
                     alt="Manuel Ernesto Riaño Garzón"
-                    width={120}
-                    height={120}
-                    className="rounded-full object-cover border-4 border-[#28A59F]"
+                    width={150}
+                    height={300}
+                    className="rounded-full object-cover border-4 border-[#68AB6A] "
                   />
                 </div>
 
-                <h3 className="font-bold text-lg text-[#28A59F]">
+                <h3 className="font-bold text-lg text-white">
                   Manuel Ernesto Riaño Garzón
                 </h3>
 
@@ -327,9 +451,8 @@ export default function RedcienPage() {
                   Co-líder de REDCIEN
                 </p>
 
-                <p className="text-sm text-gray-600 mt-2">
-                  Jefe de Investigación e Innovación,
-                  Universidad Simón Bolívar – sede Cúcuta
+                <p className="text-sm text-black-600 mt-2">
+                   Jefe de Investigación e Innovación, Unisimón Cúcuta
                 </p>
 
               </motion.div>
@@ -337,16 +460,7 @@ export default function RedcienPage() {
              
 
             </div>
-             <section className="flex justify-center mt-16 text-white">
-
-                <a
-                  href="mailto:redcien@unisimon.edu.co"
-                  className="bg-black text-white px-8 py-3 rounded-full font-bold shadow-lg"
-                >
-                  Contactar a REDCIEN ✉
-                </a>
-
-              </section>
+             
 
           </section>
 
