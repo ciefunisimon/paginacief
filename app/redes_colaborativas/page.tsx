@@ -356,6 +356,42 @@ export default function RedcienPage() {
               •	📄 <strong>Carta de Compromiso</strong>
             </p>
 
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+
+            {/* ACTA */}
+            <a
+              href="/acta_constitucion.pdf"
+              download
+              className="bg-[#68AB6A] text-black p-6 rounded-xl shadow-md hover:shadow-lg transition text-center"
+            >
+              <p className="text-lg font-bold mb-2">📄 Acta de Constitución</p>
+              <p className="text-sm text-gray-600">
+                Documento oficial de creación de la red.
+              </p>
+              <span className="inline-block mt-4 bg-[#FFB000] text-white px-4 py-2 rounded-full text-sm">
+                Descargar PDF
+              </span>
+            </a>
+
+            {/* ACUERDO */}
+            <a
+              href="/acuerdo_voluntades.pdf"
+              download
+              className="bg-[#68AB6A] text-black p-6 rounded-xl shadow-md hover:shadow-lg transition text-center"
+            >
+              <p className="text-lg font-bold mb-2">📄 Acuerdo de Voluntades</p>
+              <p className="text-sm text-gray-600">
+                Documento de compromiso institucional.
+              </p>
+              <span className="inline-block mt-4 bg-[#FFB000] text-white px-4 py-2 rounded-full text-sm">
+                Descargar PDF
+              </span>
+            </a>
+
+            
+
+          </div>
+
             <p className="text-2xl font-bold mb-6 text-white">
               Información de Contacto:
             </p>
