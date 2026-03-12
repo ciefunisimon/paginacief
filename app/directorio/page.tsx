@@ -983,6 +983,27 @@ export default function DirectorioProfesores() {
       ],
       fotoPosicion:"object-[50%_30%]"
     },
+    {
+      foto: "/miguel_perez.jpeg",
+      nombre: " Miguel Ángel Pérez Villamizar  ",
+      correo: " miguel.perezv@unisimon.edu.co ",
+      categoria: "sin_categoria", 
+      links: {
+        cvlac:"https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000457949",
+        scopus: "",
+        orcid: "http://orcid.org/0000-0002-5234-9568%E2%80%9D",
+        researchgate:"",
+        scholar: ""
+      },
+      temas: [
+        "Desarrollo de software",
+        "Analitica de Datos",
+        "Gestión de Proyectos",
+        "Gestión de Infraestructura y Servicios de TI",
+        "Inteligencia Artificial",
+      
+      ]
+    },
     
       // Agrega más profesores aquí...
   ];
