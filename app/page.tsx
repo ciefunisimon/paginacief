@@ -141,7 +141,7 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-center mb-12 text-[#68AB6A]">
               Iniciativas Estratégicas
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 px-2 sm:px-0">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 px-2 sm:px-0">
               <Link
                 href="/policy"
                 className="block p-6 sm:p-8 rounded-2xl shadow-md border border-[#68AB6A]/30 hover:shadow-lg transition text-center bg-gradient-to-b from-white to-gray-50"
@@ -527,3 +527,4 @@ export default function HomePage() {
     </>
   );
 }
+
