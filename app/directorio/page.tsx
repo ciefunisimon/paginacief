@@ -189,10 +189,9 @@ export default function DirectorioProfesores() {
         scholar: "https://scholar.google.es/citations?hl=es&user=LOlkipkAAAAJ"
       },
       temas: [
-        "Gestión Organizacional ",
-        "Liderazgo transformacional y cultura organizacional ",
-        "Marketing",
-        "Talento humano, emprendimiento e innovación",
+        "Neuropsicología ",
+        "Psicología clínica ",
+        
 
       ]
     },
@@ -237,7 +236,7 @@ export default function DirectorioProfesores() {
       ]
     },
     {
-      foto: "/franklin_espinosa.jpg",
+      foto: "/franklin_nuevo.jpeg",
       nombre: " Jhon Franklin Espinosa Castro ",
       correo: " jhon.espinosa@unisimon.edu.co ",
       categoria: "senior", // <<--- AGREGA LA CATEGORÍA AQUÍ
@@ -1056,6 +1055,7 @@ export default function DirectorioProfesores() {
     </div>
   );
 }
+
 
 
 
