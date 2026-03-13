@@ -423,82 +423,81 @@ export default function RedcienPage() {
 
 
           {/* LIDERAZGO REDCIEN */}
-          <section className="mb-16">
+            <section className="mb-16">
 
-            <h2 className="text-2xl font-bold mb-10 text-center text-white">
-              Liderazgo REDCIEN
-            </h2>
+              <h2 className="text-2xl font-bold mb-10 text-center text-white">
+                Liderazgo REDCIEN
+              </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
 
-              {/* LIDER */}
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-8 text-center"
-              >
+                {/* LIDER */}
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-8 text-center"
+                >
 
-                <div className="flex justify-center mb-4">
-                  <Image
-                    src="/franklin_espinosa.jpg"
-                    alt="Jhon Franklin Espinosa Castro"
-                    width={150}
-                    height={120}
-                    className="rounded-full object-cover border-4 border-[#68AB6A]"
-                  />
-                </div>
+                  <div className="flex justify-center mb-4">
+                    <div className="relative w-40 h-40">
+                      <Image
+                        src="/franklin_nuevo.jpeg"
+                        alt="Jhon Franklin Espinosa Castro"
+                        fill
+                        className="rounded-full object-cover border-4 border-[#68AB6A]"
+                      />
+                    </div>
+                  </div>
 
-                <h3 className="font-bold text-lg text-white">
-                  Jhon Franklin Espinosa Castro
-                </h3>
+                  <h3 className="font-bold text-lg text-white">
+                    Jhon Franklin Espinosa Castro
+                  </h3>
 
-                <p className="font-semibold mt-2">
-                  Líder de REDCIEN
-                </p>
+                  <p className="font-semibold mt-2">
+                    Líder de REDCIEN
+                  </p>
 
-                <p className="text-sm text-black-600 mt-2">
-                  Coordinador de Publicaciones, Unisimón Cúcuta
-                </p>
+                  <p className="text-sm text-black-600 mt-2">
+                    Coordinador de Publicaciones, Unisimón Cúcuta
+                  </p>
 
-              </motion.div>
+                </motion.div>
 
 
 
-              {/* CO LIDER */}
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-8 text-center"
-              >
+                {/* CO LIDER */}
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-8 text-center"
+                >
 
-                <div className="flex justify-center mb-4">
-                  <Image
-                    src="/manuel_riano.jpeg"
-                    alt="Manuel Ernesto Riaño Garzón"
-                    width={150}
-                    height={300}
-                    className="rounded-full object-cover border-4 border-[#68AB6A] "
-                  />
-                </div>
+                  <div className="flex justify-center mb-4">
+                    <div className="relative w-40 h-40">
+                      <Image
+                        src="/manuel_riano.jpeg"
+                        alt="Manuel Ernesto Riaño Garzón"
+                        fill
+                        className="rounded-full object-cover border-4 border-[#68AB6A]"
+                      />
+                    </div>
+                  </div>
 
-                <h3 className="font-bold text-lg text-white">
-                  Manuel Ernesto Riaño Garzón
-                </h3>
+                  <h3 className="font-bold text-lg text-white">
+                    Manuel Ernesto Riaño Garzón
+                  </h3>
 
-                <p className="font-semibold mt-2">
-                  Co-líder de REDCIEN
-                </p>
+                  <p className="font-semibold mt-2">
+                    Co-líder de REDCIEN
+                  </p>
 
-                <p className="text-sm text-black-600 mt-2">
-                   Jefe de Investigación e Innovación, Unisimón Cúcuta
-                </p>
+                  <p className="text-sm text-black-600 mt-2">
+                    Jefe de Investigación e Innovación, Unisimón Cúcuta
+                  </p>
 
-              </motion.div>
+                </motion.div>
 
-             
+              </div>
 
-            </div>
-             
-
-          </section>
+            </section>
 
         </div>
 
