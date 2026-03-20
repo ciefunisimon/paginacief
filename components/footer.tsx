@@ -10,7 +10,7 @@ export default function Footer() {
 
 
   return (
-    <footer className="bg-gradient-to-b from-muted/30 to-muted/50 border-t border-border/50">
+    <footer className="bg-to-b from-muted/30 to-muted/50 border-t border-border/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
@@ -47,7 +47,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <span>📞</span>
-                <span>+ (57) 6-582-7070 Ext 140(Chatbot)</span>
+                <span>+ (57) 6-582-7070 Ext 140 </span>
               </div>
               <div className="flex items-center space-x-2">
                 <span>📍</span>
@@ -59,7 +59,17 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-border/50 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-border/50 mt-12 pt-8 flex flex-col md:flex-col justify-between items-start">
+          <p className="text-muted-foreground text-sm"><strong>Aviso sobre derechos de imagen:</strong> Los logotipos, marcas e insignias institucionales 
+              que aparecen en este sitio web pertenecen exclusivamente a sus respectivos propietarios. Su uso en 
+              este espacio tiene fines meramente informativos y de difusión académica, en el marco de las relaciones 
+              de colaboración científica e investigativa del CIEF. El CIEF no reclama ningún derecho de propiedad 
+              sobre dichas marcas.
+              </p>
+           <p>
+            
+            </p>   
+              
           <p className="text-muted-foreground text-sm">© CIEF. Todos los derechos reservados.</p>
         </div>
       </div>
