@@ -254,38 +254,47 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Sección de proyectos y actividades */}
-                  <div className="flex justify-center w-full ml-80">
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mt-12 w-fit">
-                      {[
-                        { label: "Proyectos", value: 28, color: "#34C759" },
-                        { label: "Eventos científicos", value: 68, color: "#FFB000" },
-                        { label: "Apropiación social", value: 29, color: "#AF52DE" },
-                        { label: "Redes conocimiento", value: 20, color: "#0A84FF" },
-                        { label: "Consultorías", value: 17, color: "#A8E6CF" },
-                        { label: "Tutorías", value: 105, color: "#FF3B30" },
-                        { label: "Movilidades", value: 23, color: "#FFD60A" },
-                      ].map((stat, i) => (
-                        <div
-                          key={i}
-                          className="flex flex-col items-center justify-center bg-white text-black p-3 rounded-xl shadow-lg hover:scale-105 transition-all"
-                          style={{
-                            borderBottom: `6px solid ${stat.color}`,
-                          }}
-                        >
-                          <span
-                            className="text-2xl font-bold"
-                            style={{ color: stat.color }}
-                          >
-                            {stat.value}
-                          </span>
-                          <p className="text-xs mt-1 font-medium text-center">
-                            {stat.label}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
+            {/* Sección de proyectos y actividades */}
+            <div className="w-full mt-12 px-4 flex justify-center">
+
+              <div className="flex flex-wrap justify-center lg:translate-x-80 gap-4 max-w-7xl">
+
+                {[
+                  { label: "Proyectos", value: 28, color: "#34C759" },
+                  { label: "Eventos científicos", value: 68, color: "#FFB000" },
+                  { label: "Apropiación social", value: 29, color: "#AF52DE" },
+                  { label: "Redes conocimiento", value: 20, color: "#0A84FF" },
+                  { label: "Consultorías", value: 17, color: "#A8E6CF" },
+                  { label: "Tutorías", value: 105, color: "#FF3B30" },
+                  { label: "Movilidades", value: 23, color: "#FFD60A" },
+                ].map((stat, i) => (
+                  
+                  <div
+                    key={i}
+                    className="w-24 flex flex-col items-center justify-center bg-white text-black p-4 rounded-xl shadow-lg hover:scale-105 transition-all duration-300"
+                    style={{
+                      borderBottom: `6px solid ${stat.color}`,
+                    }}
+                  >
+                    
+                    <span
+                      className="text-2xl font-bold"
+                      style={{ color: stat.color }}
+                    >
+                      {stat.value}
+                    </span>
+
+                    <p className="text-xs mt-1 font-medium text-center">
+                      {stat.label}
+                    </p>
+
                   </div>
+                  
+                ))}
+
+              </div>
+
+            </div>
 
             </div>
           </div>
