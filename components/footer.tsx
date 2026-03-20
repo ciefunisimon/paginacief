@@ -59,18 +59,17 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-border/50 mt-12 pt-8 flex flex-col md:flex-col justify-between items-start">
-          <p className="text-muted-foreground text-sm"><strong>Aviso sobre derechos de imagen:</strong> Los logotipos, marcas e insignias institucionales 
-              que aparecen en este sitio web pertenecen exclusivamente a sus respectivos propietarios. Su uso en 
-              este espacio tiene fines meramente informativos y de difusión académica, en el marco de las relaciones 
-              de colaboración científica e investigativa del CIEF. El CIEF no reclama ningún derecho de propiedad 
-              sobre dichas marcas.
-              </p>
-           <p>
-            
-            </p>   
-              
-          <p className="text-muted-foreground text-sm">© CIEF. Todos los derechos reservados.</p>
+        <div className="border-t border-border/50 mt-12 pt-8 flex flex-col md:flex-col justify-between items-start">   
+           <p className="text-muted-foreground text-[11px] leading-relaxed opacity-80">
+              <strong className="font-semibold">Aviso sobre derechos de imagen:</strong>  
+               Los logotipos, marcas e insignias institucionales que aparecen en este sitio web 
+              pertenecen exclusivamente a sus respectivos propietarios. Su uso en este espacio 
+              tiene fines informativos y de difusión académica, en el marco de las relaciones 
+              de colaboración científica e investigativa del CIEF.
+            </p>
+          <p className="text-muted-foreground text-[13px] leading-relaxed opacity-80">© CIEF. Todos los derechos reservados.</p>
+          
+           
         </div>
       </div>
     </footer>
