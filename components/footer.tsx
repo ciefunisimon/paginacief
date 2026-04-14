@@ -67,7 +67,7 @@ export default function Footer() {
               tiene fines informativos y de difusión académica, en el marco de las relaciones 
               de colaboración científica e investigativa del CIEF.
             </p>
-          <p className="text-muted-foreground text-[13px] leading-relaxed opacity-80">© CIEF. Todos los derechos reservados.</p>
+          <p className="text-muted-foreground text-[13px] leading-relaxed opacity-80">© 2026 Universidad Simón Bolívar – CIEF. Todos los derechos reservados.</p>
           
            
         </div>
@@ -75,3 +75,4 @@ export default function Footer() {
     </footer>
   )
 }
+
