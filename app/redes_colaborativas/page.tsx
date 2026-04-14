@@ -75,7 +75,7 @@ export default function RedcienPage() {
             className="mb-20 flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left"
           >
             {/* FRANJA BLANCA */}
-          <div className="bg-[#FFB000] rounded-2xl px-8 py-6 shadow-lg flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left"> 
+          <div className="bg-white rounded-2xl px-8 py-6 shadow-lg flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left"> 
 
             <motion.div
               whileHover={{ scale: 1.08, rotate: 2 }}
@@ -90,7 +90,7 @@ export default function RedcienPage() {
               />
             </motion.div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#68AB6A] leading-tight">
               Red de Editores Científicos
               <br className="hidden sm:block" />
               del Norte de Santander
@@ -105,11 +105,11 @@ export default function RedcienPage() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
+            className="bg-white text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
           >
 
-            <h2 className="text-2xl font-bold mb-6 text-[#FFFFFF]">
-              Que es la REDCIEN
+            <h2 className="text-2xl font-bold mb-6 text-[#68AB6A]">
+              ¿Qué es la REDCIEN?
             </h2>
 
             <p className="mb-4 leading-relaxed">
@@ -179,7 +179,7 @@ export default function RedcienPage() {
                 <motion.div
                   key={i}
                   whileHover={{ scale: 1.04 }}
-                  className="bg-[#FFB000] text-black rounded-2xl p-6 shadow-lg flex flex-col justify-between"
+                  className="bg-white text-black rounded-2xl p-6 shadow-lg flex flex-col justify-between"
                 >
 
                   <div>
@@ -222,10 +222,10 @@ export default function RedcienPage() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
+            className="bg-white text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
           >
 
-            <h2 className="text-2xl font-bold mb-6 text-white">
+            <h2 className="text-2xl font-bold mb-6 text-[#68AB6A]">
               Comité REDCIEN
             </h2>
 
@@ -234,7 +234,7 @@ export default function RedcienPage() {
               esté respaldada por la experiencia científica y académica.
             </p>
 
-             <p className="text-2xl font-bold mb-6 text-white">
+             <p className="text-2xl font-bold mb-6 text-[#68AB6A]">
               Configuración del Comité:
             </p>
 
@@ -243,7 +243,25 @@ export default function RedcienPage() {
             </p>
 
             <p className="mb-6 leading-relaxed">
-              <strong>•	7 Áreas de Gestión Especializadas: Correspondientes a los ejes estratégicos de la red.</strong>
+              <strong>•	7 Áreas de Gestión Especializadas:</strong>
+            </p>
+             <p className="mb-6 leading-relaxed">
+                 <strong> Gestión académica</strong>
+            </p>
+             <p className="mb-6 leading-relaxed">
+              <strong> Gestión científica</strong>
+            </p>
+             <p className="mb-6 leading-relaxed">
+              <strong> Gestión ética y buenas prácticas</strong>
+            </p>
+             <p className="mb-6 leading-relaxed">
+              <strong> Gestión de divulgación y comunicación</strong>
+            </p>
+             <p className="mb-6 leading-relaxed">
+              <strong> Gestión técnica y operativa</strong>
+            </p>
+             <p className="mb-6 leading-relaxed">
+              <strong> Gestión financiera</strong>
             </p>
 
           </motion.section>
@@ -255,10 +273,10 @@ export default function RedcienPage() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
+            className="bg-white text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
           >
 
-            <h2 className="text-2xl font-bold mb-6 text-white">
+            <h2 className="text-2xl font-bold mb-6 text-[#68AB6A]">
               Únete a la Red: Criterios de Inscripción
             </h2>
 
@@ -267,7 +285,7 @@ export default function RedcienPage() {
               y Norte de Santander a sumarse a este ecosistema.
             </p>
 
-            <p className="text-2xl font-bold mb-6 text-white">
+            <p className="text-2xl font-bold mb-6 text-[#68AB6A]">
               Proceso de Postulación:
             </p>
 
@@ -314,13 +332,13 @@ export default function RedcienPage() {
 
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="inline-block bg-[#FFB000] text-black px-8 py-6 rounded-xl shadow-lg"
+              className="inline-block bg-white text-black px-8 py-6 rounded-xl shadow-lg"
             >
-              <motion.p className="text-4xl font-bold">
+              <motion.p className="text-4xl font-bold text-[#68AB6A]">
                 {rounded}
               </motion.p>
 
-              <p className="text-sm mt-2">
+              <p className="text-sm mt-2 text-black">
                 divulgaciones científicas para la comunidad Unisimón
               </p>
 
@@ -334,9 +352,9 @@ export default function RedcienPage() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
+            className="bg-white text-black rounded-2xl shadow-lg p-6 sm:p-10 mb-12"
           >
-              <p className="text-2xl font-bold mb-6 text-white">
+              <p className="text-2xl font-bold mb-6 text-[#68AB6A]">
               Nuestra Documentacion
             </p>
 
@@ -364,8 +382,8 @@ export default function RedcienPage() {
               download
               className="bg-[#68AB6A] text-black p-6 rounded-xl shadow-md hover:shadow-lg transition text-center"
             >
-              <p className="text-lg font-bold mb-2">📄 Acta de Constitución</p>
-              <p className="text-sm text-gray-600">
+              <p className="text-lg font-bold mb-2 text-black">📄 Acta de Constitución</p>
+              <p className="text-sm text-white">
                 Documento oficial de creación de la red.
               </p>
               <span className="inline-block mt-4 bg-[#FFB000] text-white px-4 py-2 rounded-full text-sm">
@@ -380,7 +398,7 @@ export default function RedcienPage() {
               className="bg-[#68AB6A] text-black p-6 rounded-xl shadow-md hover:shadow-lg transition text-center"
             >
               <p className="text-lg font-bold mb-2">📄 Acuerdo de Voluntades</p>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-white">
                 Documento de compromiso institucional.
               </p>
               <span className="inline-block mt-4 bg-[#FFB000] text-white px-4 py-2 rounded-full text-sm">
@@ -392,7 +410,7 @@ export default function RedcienPage() {
 
           </div>
 
-            <p className="text-2xl font-bold mb-6 text-white">
+            <p className="text-2xl font-bold mb-6 text-[#68AB6A]">
               Información de Contacto:
             </p>
 
@@ -434,7 +452,7 @@ export default function RedcienPage() {
                 {/* LIDER */}
                 <motion.div
                   whileHover={{ scale: 1.05 }}
-                  className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-8 text-center"
+                  className="bg-white text-black rounded-2xl shadow-lg p-8 text-center"
                 >
 
                   <div className="flex justify-center mb-4">
@@ -448,7 +466,7 @@ export default function RedcienPage() {
                     </div>
                   </div>
 
-                  <h3 className="font-bold text-lg text-white">
+                  <h3 className="font-bold text-lg text-[#68AB6A]">
                     Jhon Franklin Espinosa Castro
                   </h3>
 
@@ -467,7 +485,7 @@ export default function RedcienPage() {
                 {/* CO LIDER */}
                 <motion.div
                   whileHover={{ scale: 1.05 }}
-                  className="bg-[#FFB000] text-black rounded-2xl shadow-lg p-8 text-center"
+                  className="bg-white text-black rounded-2xl shadow-lg p-8 text-center"
                 >
 
                   <div className="flex justify-center mb-4">
@@ -481,7 +499,7 @@ export default function RedcienPage() {
                     </div>
                   </div>
 
-                  <h3 className="font-bold text-lg text-white">
+                  <h3 className="font-bold text-lg text-[#68AB6A]">
                     Manuel Ernesto Riaño Garzón
                   </h3>
 
