@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Script from "next/script";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Image from "next/image";
@@ -27,6 +28,15 @@ export default function RedcienPage() {
   /* CONTADOR PRODUCTOS */
   const count = useMotionValue(0);
   const rounded = useTransform(count, latest => Math.floor(latest));
+
+  useEffect(() => {
+  const interval = setInterval(() => {
+    if ((window as any)?.SKWidgets) {
+      (window as any).SKWidgets.load();
+      clearInterval(interval);
+    }
+  }, 500);
+}, []);
 
   useEffect(() => {
     animate(count, 69, { duration: 2 });
@@ -330,22 +340,46 @@ export default function RedcienPage() {
               Centro de Documentación y Contacto
             </h2>
 
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="inline-block bg-white text-black px-8 py-6 rounded-xl shadow-lg"
-            >
-              <motion.p className="text-4xl font-bold text-[#68AB6A]">
-                {rounded}
-              </motion.p>
+           
+            {/* FEED DE X (Curator) */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg">
 
-              <p className="text-sm mt-2 text-black">
-                divulgaciones científicas para la comunidad Unisimón
-              </p>
+              {/* CONTENEDOR DEL FEED */}
+              <div id="curator-feed-default-feed-layout">
+                <a
+                  href="https://curator.io"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="crt-logo crt-tag"
+                >
+                  Powered by Curator.io
+                </a>
+              </div>
 
-               
-            </motion.div>
+              {/* SCRIPT ORIGINAL ADAPTADO */}
+              <Script
+                id="curator-feed-script"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    (function(){
+                      var i,e,d=document,s="script";
+                      i=d.createElement("script");
+                      i.async=1;
+                      i.charset="UTF-8";
+                      i.src="https://cdn.curator.io/published/caa3000f-7b9f-4605-bca8-23e7aabe75a8.js";
+                      e=d.getElementsByTagName(s)[0];
+                      e.parentNode.insertBefore(i, e);
+                    })();
+                  `
+                }}
+              />
+
+            </div>
 
           </motion.section>
+
+          
 
            <motion.section
             variants={fadeUp}
