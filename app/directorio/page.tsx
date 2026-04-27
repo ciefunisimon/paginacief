@@ -17,7 +17,29 @@ export default function DirectorioProfesores() {
 
   // 🔹 Lista de profesores (agrega todos los tuyos acá)
   const profesores = [
-
+      {
+        foto: "/Maria_Antonia_Cuberos.jpg",
+        nombre: "María Antonia Cuberos de Quintero",
+        correo: "maria.cuberos@unisimon.edu.co",
+        categoria: "emerito", 
+        links: {
+          cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001621770",
+          scopus: "https://www.scopus.com/authid/detail.uri?authorId=57196280109",
+          orcid: "https://orcid.org/0000-0002-5235-552X",
+          researchgate:"https://www.researchgate.net/profile/Maria-Quintero-27",
+          scholar: "https://scholar.google.es/citations?user=I_pEiQ0AAAAJ&hl=es&oi=ao"
+        },
+        temas: [
+          "Estudios socioeconómicos de la frontera colombo venezolana",
+          "Derechos humanos",
+          "Violencia y desplazamiento",
+          "Educación para el desarrollo sostenible",
+          "Gerencia, tecnología y sociedad",
+          
+        ],
+        fotoPosicion:"object-[50%_50%]"
+        
+      },
      {
       foto: "/manuel_riano.jpeg",
       nombre: " Manuel Ernesto Riaño Garzón  ",
@@ -38,7 +60,7 @@ export default function DirectorioProfesores() {
       ]
     },
     {
-      foto: "/Neida_Albornozz.jpeg",
+      foto: "/Neida_Albornoz_Nueva_version.png",
       nombre: "Neida Albornoz Arias",
       correo: "neida.albornoz@unisimon.edu.co",
       categoria: "senior", // <<--- AGREGA LA CATEGORÍA AQUÍ
@@ -469,6 +491,28 @@ export default function DirectorioProfesores() {
       ]
     },
     {
+      foto: "/Sandra_Milena_vargas_Angulo.jpg",
+      nombre: "Sandra Milena Vargas Angulo",
+      correo: "sandra.vargas@unisimon.edu.co",
+      categoria: "asociado", 
+      links: {
+        cvlac:"https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001452144",
+        scopus: "https://www.scopus.com/authid/detail.uri?authorId=57200414062",
+        orcid: "https://orcid.org/0000-0001-7091-4092",
+        researchgate:"https://www.researchgate.net/profile/Sandra-Vargas-6",
+        scholar: "https://scholar.google.es/citations?user=GuEi9bYAAAAJ&hl=es&oi=ao"
+      },
+      temas: [
+        "Innovación",
+        "Educación y tecnología social",
+        "Formacion de profesores",
+        "Educacion virtual",
+        "Gestion curricular",
+        "Ciencias de la Educacions",
+      
+      ]
+    },
+    {
       foto: "/julieth_acevedo.jpg",
       nombre: " Julieth Paola Acevedo Meneses    ",
       correo: " julieth.acevedom@unisimon.edu.co ",
@@ -744,6 +788,49 @@ export default function DirectorioProfesores() {
         "Strategic design",
       ]
     },
+    {
+      foto: "/jose_maria_rincon.jpeg",
+      nombre: " José María Rincón Ramón ",
+      correo: " jose.rincon@unisimon.edu.co ",
+      categoria: "junior", 
+      links: {
+        cvlac: "https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000037139",
+        scopus: "",
+        orcid: "https://orcid.org/0000-0002-1992-5172",
+        researchgate:"https://www.researchgate.net/profile/Jose-Rincon-17",
+        scholar: "https://scholar.google.es/citations?user=G6c28SsAAAAJ&hl=es&oi=ao"
+      },
+      temas: [
+        "Construcción de paz y desarrollo humano",
+        
+        
+      ],
+      fotoPosicion:"object-[50%_50%]"
+      
+    },
+     
+    {
+      foto: "/Diana_Marcela_Pantaleon.jpg",
+      nombre: "Diana Marcela Pantaleón Pinto",
+      correo: "diana.pantaleon@unisimon.edu.co",
+      categoria: "junior", 
+      links: {
+        cvlac:"https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000102502",
+        scopus: "",
+        orcid: "https://orcid.org/0000-0002-4622-7759",
+        researchgate:"https://www.researchgate.net/profile/Diana-Pantaleon",
+        scholar: "https://scholar.google.es/citations?hl=es&user=Y-s-jicAAAAJ"
+      },
+      temas: [
+        "Bienestar en la niñez y en la adolescencia",
+        "Género, diversidad y derechos humanos",
+        "Uso ético y legal de la IA",
+        "Inclusión",
+        "Educacion",
+        "Derecho de Familia ",
+      
+      ]
+    },
 
     {
       foto: "/carlos_valderrama.jpg",
@@ -991,8 +1078,8 @@ export default function DirectorioProfesores() {
         cvlac:"https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000457949",
         scopus: "",
         orcid: "http://orcid.org/0000-0002-5234-9568%E2%80%9D",
-        researchgate:"",
-        scholar: ""
+        researchgate:"https://www.researchgate.net/profile/Miguel-Perez-Villamizar?ev=hdr_xprf",
+        scholar: "https://scholar.google.com/citations?view_op=list_works&hl=es&user=5LmXaiMAAAAJ&gmla=AEk_c1sNrq91eFJud4Xw-KKUkHytDkaUPxZbGwVj4S3SvlM_H-idFWDwM1KyCo3xpaUALUKGAi6WJgQtrGpY24t2Q7fqCN9Ff0h8u-mQd_0KQo93vUbpUeQN1CG1zW7Y9rP0Ph6uZLvs8i1UTwiN"
       },
       temas: [
         "Desarrollo de software",
@@ -1002,7 +1089,34 @@ export default function DirectorioProfesores() {
         "Inteligencia Artificial",
       
       ]
+      
     },
+    {
+      foto: "/Camila_Andrea_Rojas_Sanguino.jpg",
+      nombre: "Camila Andrea Rojas Sanguino",
+      correo: "c_rojas11@unisimon.edu.co",
+      categoria: "sin_categoria", 
+      links: {
+        cvlac:"https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001731408",
+        scopus: "",
+        orcid: "https://orcid.org/0000-0003-4436-2073",
+        researchgate:"https://www.researchgate.net/profile/Camila-Rojas-Sanguino",
+        scholar: "https://scholar.google.com/citations?hl=en&user=LV4lFBAAAAAJ"
+      },
+      temas: [
+        "Feminismos y estudios de género ",
+        "Memorias colectivas en contextos de conflicto",
+        "Economía del cuidado",
+        "Cambio social y del comportamiento",
+        "Salud mental y bienestar psicosocial ",
+        "Liderazgo e integración comunitaria ",
+        "Procesos territoriales de construcción de paz",
+      
+      ],
+      fotoPosicion:"object-[50%_50%]"
+    },
+     
+    
     
       // Agrega más profesores aquí...
   ];
@@ -1055,7 +1169,5 @@ export default function DirectorioProfesores() {
     </div>
   );
 }
-
-
 
 
