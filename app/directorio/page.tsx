@@ -60,7 +60,7 @@ export default function DirectorioProfesores() {
       ]
     },
     {
-      foto: "/Neida_Albornoz_Nueva_version.png",
+      foto: "/Neida_Albornoz2.png",
       nombre: "Neida Albornoz Arias",
       correo: "neida.albornoz@unisimon.edu.co",
       categoria: "senior", // <<--- AGREGA LA CATEGORÍA AQUÍ
