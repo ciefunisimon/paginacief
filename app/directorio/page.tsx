@@ -789,7 +789,7 @@ export default function DirectorioProfesores() {
       ]
     },
     {
-      foto: "/jose_maria_rincon.jpeg",
+      foto: "/Jose_Maria_Rincon.jpeg",
       nombre: " José María Rincón Ramón ",
       correo: " jose.rincon@unisimon.edu.co ",
       categoria: "junior", 
