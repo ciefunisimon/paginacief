@@ -491,7 +491,7 @@ export default function DirectorioProfesores() {
       ]
     },
     {
-      foto: "/Sandra_Milena_vargas_Angulo.jpg",
+      foto: "/Sandra_vargas.jpg",
       nombre: "Sandra Milena Vargas Angulo",
       correo: "sandra.vargas@unisimon.edu.co",
       categoria: "asociado", 
