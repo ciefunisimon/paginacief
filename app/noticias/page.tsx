@@ -8,6 +8,12 @@ import { FaCalendarAlt } from "react-icons/fa";
 const boletines = [
   {
     id: 1,
+    titulo: "Boletín Informativo CIEF 2026-1",
+    subtitulo: "CREA · CONECTA · TRASCIENDE",
+    archivo: "/boletin_cief20261.pdf",
+  },
+  {
+    id: 2,
     titulo: "Boletín Informativo CIEF 2025-2",
     subtitulo: "CREA · CONECTA · TRASCIENDE",
     archivo: "/boletin_cief20252.pdf",
