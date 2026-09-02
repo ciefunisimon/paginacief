@@ -33,6 +33,13 @@ const cajas = [
     description:
       "Prevención de la trata de personas: Estrategias comunitarias y políticas públicas para enfrentar un delito en expansión",
   },
+  {
+    img: "/documento5.jpg",
+    link: "https://hdl.handle.net/20.500.12442/18329",
+    title: "Policy Brief 5",
+    description:
+      "El cuidado en la salud mental, un compromiso en la frontera de Cúcuta. Claves para la acción desde el territorio, la articulación institucional y la protección estado-sociedad",
+  },
 ];
 
 export default function PolicyLabPage() {
