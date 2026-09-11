@@ -1146,11 +1146,11 @@ export default function DirectorioProfesores() {
         {/* TÍTULO */}
         <section className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-white">
-            Directorio de Investigadores
+            Directorio de Profesores
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto opacity-90 leading-relaxed text-white">
-            Consulta la información de cada investigador vinculado al CIEF (redes académicas y temas de investigación).
+            Consulta la información de cada profesor vinculado al CIEF (redes académicas y temas de investigación).
           </p>
         </section>
 
