@@ -46,9 +46,9 @@ export default function OrganigramaCIEF() {
           className="flex flex-col items-center mb-10"
         >
           <div className="bg-[#FFB000] rounded-2xl shadow-xl p-6 w-full sm:w-80 max-w-xs border border-white/30">
-            <p className="font-bold text-lg">Manuel E. Riaño G.</p>
+            <p className="font-bold text-lg">Luis Ortíz Ospino</p>
             <p className="text-sm text-black/80 mt-1">
-              Jefe del Departamento de Investigación e Innovación – Cúcuta
+              Vicerrectoría de Investigación, Innovación y Extensión
             </p>
           </div>
         </motion.div>
