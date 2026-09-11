@@ -318,7 +318,7 @@ export default function HomePage() {
                   btn: "Plantear un Reto Fronterizo",
                 },
                 {
-                  title: "DIRECTORIO DE INVESTIGADORES",
+                  title: "DIRECTORIO DE PROFESORES",
                   desc: "Acceso a directorio de expertos.",
                   link: "/directorio",
                   btn: "Acceder a la Base de Datos",
