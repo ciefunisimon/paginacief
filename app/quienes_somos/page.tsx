@@ -11,7 +11,7 @@ import ObjetivosSection from "@/components/ObjetivosSection";
 import ValoresSection from "@/components/ValoresSection";
 import EurekaSection from "@/components/EurekaSection";
 //import FeaturesSection from "@/components/features-section";
-import DepartamentoInvestigacionCucuta from "@/components/departamento_investigacion_cucuta";
+//import DepartamentoInvestigacionCucuta from "@/components/departamento_investigacion_cucuta";
 //import CentroInvestigacionCief from "@/components/Centro_investigacion_cief";
 import Nuevo_organigrama from "@/components/nuevo_organigrama";
 
