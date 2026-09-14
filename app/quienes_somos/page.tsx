@@ -39,7 +39,7 @@ Su fundación responde a la necesidad de comprender y aportar soluciones a las r
         <ValoresSection />
         <EurekaSection />
         {/* <FeaturesSection /> */}
-        <DepartamentoInvestigacionCucuta />
+        {/*<DepartamentoInvestigacionCucuta />*/}
         {/* <CentroInvestigacionCief /> */}
         <Nuevo_organigrama/>
       </main>
