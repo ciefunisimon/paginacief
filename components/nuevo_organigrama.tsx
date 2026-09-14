@@ -169,6 +169,7 @@ export default function Nuevo_organigrama() {
         </motion.h2>
 
         {/* 🔹 Nivel 1 */}
+        {/* 🔹 Nivel Superior (Luis Ortíz) + Nivel 1 (Neida Albornoz) */}
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
@@ -176,6 +177,21 @@ export default function Nuevo_organigrama() {
           viewport={{ once: true }}
           className="flex flex-col items-center mb-12"
         >
+          {/* Nuevo Nivel: Luis Ortíz Ospino */}
+          <div
+            className="bg-[#FFB000] rounded-2xl shadow-xl p-6 border border-[#68AB6A]/30 w-full max-w-[280px]"
+            style={{ minHeight: "100px" }}
+          >
+            <p className="font-bold text-lg">Luis Ortíz Ospino</p>
+            <p className="text-sm text-black/80 mt-1">
+              Vicerrectoría de Investigación, Innovación y Extensión
+            </p>
+          </div>
+
+          {/* Línea conectora entre Luis y Neida */}
+          <div className="w-[2px] h-8 bg-black"></div>
+
+          {/* Nivel Existente: Neida Albornoz */}
           <div
             className="bg-[#FFB000] rounded-2xl shadow-xl p-6 border border-[#68AB6A]/30 w-full max-w-[280px]"
             style={{ minHeight: "100px" }}
