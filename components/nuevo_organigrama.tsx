@@ -15,30 +15,35 @@ export default function NuevoOrganigrama() {
       window.OrgChart.templates.ana
     );
 
-    // 2. Tarjeta con tus colores
+    // 2. Tamaño real de la tarjeta (esto es lo que de verdad controla
+    //    el tamaño del nodo cuando se usa una plantilla personalizada;
+    //    nodeWidth/nodeHeight de la config general NO aplica aquí)
+    window.OrgChart.templates.ciefTemplate.size = [320, 130];
+
+    // 3. Tarjeta con tus colores
     window.OrgChart.templates.ciefTemplate.node = `
-      <rect x="0" y="0" width="{w}" height="{h}"
+      <rect x="0" y="0" width="320" height="130"
              fill="#FFB000"
              stroke="#68AB6A"
              stroke-width="2"
              rx="16" ry="16">
       </rect>`;
 
-    // 3. Nombre (centrado dinámicamente según el tamaño real de la tarjeta)
+    // 4. Nombre (coordenadas fijas acordes al tamaño 320x130 de arriba)
     window.OrgChart.templates.ciefTemplate.field_0 = `
-      <text data-width="{w-30}" font-size="16" font-weight="bold"
-            fill="#000000" x="{w/2}" y="{h/2-8}" text-anchor="middle">
+      <text data-width="290" font-size="16" font-weight="bold"
+            fill="#000000" x="160" y="50" text-anchor="middle">
         {val}
       </text>`;
 
-    // 4. Cargo
+    // 5. Cargo
     window.OrgChart.templates.ciefTemplate.field_1 = `
-      <text data-width="{w-30}" font-size="13"
-            fill="#333333" x="{w/2}" y="{h/2+22}" text-anchor="middle">
+      <text data-width="290" font-size="13"
+            fill="#333333" x="160" y="90" text-anchor="middle">
         {val}
       </text>`;
 
-    // 5. Inicializar con TODO más grande
+    // 6. Inicializar con TODO más grande
     const chart = new window.OrgChart(chartRef.current, {
       template: "ciefTemplate",
       nodeBinding: {
@@ -46,8 +51,6 @@ export default function NuevoOrganigrama() {
         field_1: "role",
       },
       // --- Tamaños grandes ---
-      nodeWidth: 320,           // tarjetas anchas
-      nodeHeight: 130,          // tarjetas altas
       levelSeparation: 90,      // espacio vertical entre niveles
       siblingSeparation: 50,    // espacio horizontal entre hermanos
       subtreeSeparation: 70,    // espacio entre subárboles
@@ -60,7 +63,7 @@ export default function NuevoOrganigrama() {
       padding: 40,
     });
 
-    // 6. Cargar datos
+    // 7. Cargar datos
     chart.load([
       { id: 1,  name: "Luis Ortiz Ospino",       role: "Vicerrector de Investigación" },
       { id: 2,  pid: 1, name: "Neida Albornoz Arias", role: "Director CIEF" },
@@ -80,7 +83,7 @@ export default function NuevoOrganigrama() {
       { id: 16, pid: 12, name: "Hardware y Software",  role: "" },
     ]);
 
-    // 7. Ajustar al ancho del contenedor tras renderizar
+    // 8. Ajustar al ancho del contenedor tras renderizar
     setTimeout(() => {
       try {
         if (chart.fit) chart.fit();
