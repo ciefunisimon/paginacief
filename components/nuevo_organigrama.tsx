@@ -93,7 +93,7 @@ export default function Nuevo_organigrama() {
       cargo: "",
       width: "170px",
       minHeight: "80px",
-      top: "105px",
+      top: "120px", // 🟢 Bajado un poco para evitar que la línea lo atraviese
       left: "1035px",
     },
     {
@@ -101,7 +101,7 @@ export default function Nuevo_organigrama() {
       cargo: "",
       width: "170px",
       minHeight: "80px",
-      top: "210px",
+      top: "230px", // 🟢 Ajustado más abajo
       left: "710px",
     },
     {
@@ -109,7 +109,7 @@ export default function Nuevo_organigrama() {
       cargo: "",
       width: "170px",
       minHeight: "80px",
-      top: "210px",
+      top: "230px", // 🟢 Ajustado más abajo
       left: "950px",
     },
     {
@@ -117,7 +117,7 @@ export default function Nuevo_organigrama() {
       cargo: "",
       width: "170px",
       minHeight: "80px",
-      top: "310px",
+      top: "340px", // 🟢 Ajustado más abajo
       left: "830px",
     },
   ];
@@ -129,15 +129,15 @@ export default function Nuevo_organigrama() {
 
       <div className="relative z-10 max-w-6xl mx-auto text-center">
 
-        {/* 🔗 LÍNEAS VECTORIALES (Coordenadas ajustadas milimétricamente) */}
+        {/* 🔗 LÍNEAS VECTORIALES REVISADAS Y CORREGIDAS */}
         <svg
           className="hidden lg:block absolute top-0 left-0 w-full h-full pointer-events-none"
           viewBox="0 0 1200 1000"
         >
-          {/* Línea vertical de Neida hacia la barra horizontal principal */}
-          <line x1="600" y1="360" x2="600" y2="460" stroke="black" strokeWidth="2" />
+          {/* Línea vertical de Neida alargada hasta tocar la barra horizontal exactamente (y2 de 400 a 460) */}
+          <line x1="600" y1="310" x2="600" y2="460" stroke="black" strokeWidth="2" />
 
-          {/* Barra horizontal principal que distribuye a los 3 bloques */}
+          {/* Barra horizontal principal que distribuye a los 3 bloques principales */}
           <line x1="110" y1="460" x2="1050" y2="460" stroke="black" strokeWidth="2" />
 
           {/* Bajantes hacia Nivel 2 */}
@@ -161,15 +161,17 @@ export default function Nuevo_organigrama() {
           <line x1="950" y1="600" x2="950" y2="660" stroke="black" strokeWidth="2" />
           <line x1="1149" y1="600" x2="1149" y2="660" stroke="black" strokeWidth="2" />
 
-          {/* Sub-lineas Hardware y Software */}
-          <line x1="1149" y1="710" x2="1149" y2="810" stroke="black" strokeWidth="2" />
+          {/* Sub-lineas Hardware y Software (detenida exactamente antes de la caja) */}
+          <line x1="1149" y1="710" x2="1149" y2="820" stroke="black" strokeWidth="2" />
 
           {/* Sub-lineas Comunicación / Diseñador / Multimedia / Community Manager */}
-          <line x1="950" y1="710" x2="950" y2="810" stroke="black" strokeWidth="2" />
-          <line x1="870" y1="810" x2="1030" y2="810" stroke="black" strokeWidth="2" />
-          <line x1="870" y1="810" x2="870" y2="910" stroke="black" strokeWidth="2" />
-          <line x1="1030" y1="810" x2="1030" y2="910" stroke="black" strokeWidth="2" />
-          <line x1="950" y1="810" x2="950" y2="1010" stroke="black" strokeWidth="2" />
+          <line x1="950" y1="710" x2="950" y2="830" stroke="black" strokeWidth="2" />
+          <line x1="870" y1="830" x2="1030" y2="830" stroke="black" strokeWidth="2" />
+          <line x1="870" y1="830" x2="870" y2="930" stroke="black" strokeWidth="2" />
+          <line x1="1030" y1="830" x2="1030" y2="930" stroke="black" strokeWidth="2" />
+          
+          {/* Bajante a Community Manager (detenida antes de entrar al cuadro) */}
+          <line x1="950" y1="830" x2="950" y2="1040" stroke="black" strokeWidth="2" />
         </svg>
 
         {/* 🔹 Título */}
@@ -246,7 +248,7 @@ export default function Nuevo_organigrama() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="relative lg:h-[400px] mt-12 flex flex-col gap-6 items-center lg:block"
+          className="relative lg:h-[450px] mt-12 flex flex-col gap-6 items-center lg:block"
         >
           {nivel3.map((p, i) => (
             <div
