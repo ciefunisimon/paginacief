@@ -1,24 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
 
 export default function Nuevo_organigrama() {
-  // Altura del nuevo bloque (Nivel 0 + línea) para desplazar el SVG
-  // de líneas y mantenerlo alineado con las cajas originales.
-  const nivel0Ref = useRef<HTMLDivElement>(null);
-  const [svgOffset, setSvgOffset] = useState(0);
-
-  useEffect(() => {
-    const measure = () => {
-      if (nivel0Ref.current) {
-        setSvgOffset(nivel0Ref.current.offsetHeight);
-      }
-    };
-    measure();
-    window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
-  }, []);
 
   const nivel2 = [
     {
@@ -145,13 +129,12 @@ export default function Nuevo_organigrama() {
 
       <div className="relative z-10 max-w-6xl mx-auto text-center">
 
-        {/* 🔗 LÍNEAS ORIGINALES (desplazadas para seguir alineadas con Nivel 1/2/3) */}
+        {/* 🔗 LÍNEAS ORIGINALES */}
         <svg
-          className="hidden lg:block absolute left-0 w-full h-full pointer-events-none"
-          style={{ top: svgOffset }}
+          className="hidden lg:block absolute top-0 left-0 w-full h-full pointer-events-none"
           viewBox="0 0 1200 900"
         >
-
+          
           <line x1="600" y1="490" x2="600" y2="213" stroke="black" strokeWidth="2" />
           <line x1="1000" y1="350" x2="0" y2="350" stroke="black" strokeWidth="2" />
           <line x1="110" y1="490" x2="110" y2="320" stroke="black" strokeWidth="2" />
@@ -184,32 +167,6 @@ export default function Nuevo_organigrama() {
         >
           Centro de Investigación en Estudios Fronterizos (CIEF)
         </motion.h2>
-
-        {/* 🔹 Nivel 0 */}
-        <div ref={nivel0Ref}>
-          <motion.div
-            initial={{ scale: 0.9, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="flex flex-col items-center mb-6"
-          >
-            <div
-              className="bg-[#FFB000] rounded-2xl shadow-xl p-6 border border-[#68AB6A]/30 w-full max-w-[320px]"
-              style={{ minHeight: "100px" }}
-            >
-              <p className="font-bold text-lg">Luis Ortíz Ospino</p>
-              <p className="text-sm text-black/80 mt-1">
-                Vicerrectoría de Investigación, Innovación y Extensión
-              </p>
-            </div>
-          </motion.div>
-
-          {/* 🔗 Línea Nivel 0 → Nivel 1 */}
-          <div className="hidden lg:flex justify-center">
-            <div className="w-[2px] h-10 bg-black" />
-          </div>
-        </div>
 
         {/* 🔹 Nivel 1 */}
         <motion.div
