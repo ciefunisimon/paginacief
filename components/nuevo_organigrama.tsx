@@ -24,19 +24,19 @@ export default function NuevoOrganigrama() {
              rx="16" ry="16">
       </rect>`;
 
-    // 3. Nombre (más grande)
-    window.OrgChart.templates.ciefTemplate.field_0 = `
-      <text data-width="260" font-size="20" font-weight="bold"
-            fill="#000000" x="150" y="55" text-anchor="middle">
-        {val}
-      </text>`;
+    // 3. Nombre (envuelve en 2 líneas si es largo)
+window.OrgChart.templates.ciefTemplate.field_0 = `
+  <text data-width="300" font-size="16" font-weight="bold"
+        fill="#000000" x="160" y="45" text-anchor="middle">
+    {val}
+  </text>`;
 
-    // 4. Cargo (más grande)
-    window.OrgChart.templates.ciefTemplate.field_1 = `
-      <text data-width="260" font-size="15"
-            fill="#333333" x="150" y="82" text-anchor="middle">
-        {val}
-      </text>`;
+// 4. Cargo
+window.OrgChart.templates.ciefTemplate.field_1 = `
+  <text data-width="300" font-size="13"
+        fill="#333333" x="160" y="85" text-anchor="middle">
+    {val}
+  </text>`;
 
     // 5. Inicializar con TODO más grande
     const chart = new window.OrgChart(chartRef.current, {
@@ -46,8 +46,8 @@ export default function NuevoOrganigrama() {
         field_1: "role",
       },
       // --- Tamaños grandes ---
-      nodeWidth: 280,           // tarjetas anchas
-      nodeHeight: 110,          // tarjetas altas
+      nodeWidth: 320,           // tarjetas anchas
+      nodeHeight: 130,          // tarjetas altas
       levelSeparation: 90,      // espacio vertical entre niveles
       siblingSeparation: 50,    // espacio horizontal entre hermanos
       subtreeSeparation: 70,    // espacio entre subárboles
