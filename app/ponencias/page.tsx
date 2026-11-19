@@ -7,6 +7,7 @@ const anios = [
   { year: 2023, link: "/2023" },
   { year: 2024, link: "/2024" },
   { year: 2025, link: "/2025" },
+  { year: 2026, link: "/2026" },
 ];
 
 export default function AniosPage() {
