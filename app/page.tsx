@@ -9,6 +9,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Script from "next/script";
 import PaisesUniversidades from "@/components/paisesuniversidades";
+import CifrasSection from "@/components/cifras-section";
 
 
 
@@ -196,107 +197,7 @@ export default function HomePage() {
               <PaisesUniversidades />
             </div>
 
-            {/* 📊 Estadísticas estilo infografía */}
-            <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-              {/* Sección Nuevo conocimiento */}
-              <div>
-                <h3 className="text-2xl font-bold mb-4 flex justify-center items-center gap-2">
-                  💡 Nuevo conocimiento
-                </h3>
-                <div className="flex flex-wrap justify-center gap-6">
-                  {[
-                    { label: "Artículos", value: 125, color: "#FF3B30" },
-                    { label: "Cap. de libro", value: 22, color: "#FFB000" },
-                    { label: "Libros", value: 9, color: "#34C759" },
-                    { label: "Policy’s brief", value: 4, color: "#FF2D55" },
-                  ].map((item, i) => (
-                    <div
-                      key={i}
-                      className="flex flex-col items-center justify-center bg-white text-black rounded-full w-24 h-24 shadow-md hover:scale-110 transition-all"
-                      style={{ border: `5px solid ${item.color}` }}
-                    >
-                      <span className="text-xl font-bold" style={{ color: item.color }}>
-                        {item.value}
-                      </span>
-                      <p className="text-xs mt-1 font-medium text-center">
-                        {item.label}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Sección Desarrollo e innovación */}
-              <div>
-                <h3 className="text-2xl font-bold mb-4 flex justify-center items-center gap-2">
-                  ⚙️ Desarrollo tecnológico e innovación
-                </h3>
-                <div className="flex flex-wrap justify-center gap-6">
-                  {[
-                    { label: "Innovaciones", value: 21, color: "#9B59B6" },
-                    { label: "Softwares", value: 15, color: "#E67E22" },
-                    { label: "Prototipos", value: 10, color: "#27AE60" },
-                    { label: "Signos distintivos", value: 6, color: "#F1C40F" },
-                  ].map((item, i) => (
-                    <div
-                      key={i}
-                      className="flex flex-col items-center justify-center bg-white text-black rounded-full w-24 h-24 shadow-md hover:scale-110 transition-all"
-                      style={{ border: `5px dashed ${item.color}` }}
-                    >
-                      <span className="text-xl font-bold" style={{ color: item.color }}>
-                        {item.value}
-                      </span>
-                      <p className="text-xs mt-1 font-medium text-center">
-                        {item.label}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-            {/* Sección de proyectos y actividades */}
-            <div className="w-full mt-12 px-4 flex justify-center">
-
-              <div className="flex flex-wrap justify-center lg:translate-x-80 gap-4 max-w-7xl">
-
-                {[
-                  { label: "Proyectos", value: 28, color: "#34C759" },
-                  { label: "Eventos científicos", value: 68, color: "#FFB000" },
-                  { label: "Apropiación social", value: 29, color: "#AF52DE" },
-                  { label: "Redes conocimiento", value: 20, color: "#0A84FF" },
-                  { label: "Consultorías", value: 17, color: "#A8E6CF" },
-                  { label: "Tutorías", value: 105, color: "#FF3B30" },
-                  { label: "Movilidades", value: 23, color: "#FFD60A" },
-                ].map((stat, i) => (
-                  
-                  <div
-                    key={i}
-                    className="w-24 flex flex-col items-center justify-center bg-white text-black p-4 rounded-xl shadow-lg hover:scale-105 transition-all duration-300"
-                    style={{
-                      borderBottom: `6px solid ${stat.color}`,
-                    }}
-                  >
-                    
-                    <span
-                      className="text-2xl font-bold"
-                      style={{ color: stat.color }}
-                    >
-                      {stat.value}
-                    </span>
-
-                    <p className="text-xs mt-1 font-medium text-center">
-                      {stat.label}
-                    </p>
-
-                  </div>
-                  
-                ))}
-
-              </div>
-
-            </div>
-
-            </div>
+            <CifrasSection />
           </div>
         </section>
 
