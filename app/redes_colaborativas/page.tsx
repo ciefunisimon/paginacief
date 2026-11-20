@@ -56,8 +56,12 @@ export default function RedesColaborativasPage() {
                 <FaGlobeAmericas size={96} />
               </div>
               <h2 className="mt-4 text-2xl font-bold text-[#68AB6A]">RII CIVITASS</h2>
+              <span className="mt-2 rounded-full bg-[#F2FAF5] px-3 py-1 text-xs font-semibold text-[#2D7A43]">
+                Red de la Asociación Universitaria Iberoamericana de Postgrado (AUIP)
+              </span>
               <p className="mt-2 text-gray-700">
-                Red Internacional de Investigación de la AUIP.
+                Red Iberoamericana de Investigación sobre Ciudades con Innovación Vecinal e
+                Intercambios Transfronterizos y Alternativas Societales Sostenibles.
               </p>
               <span className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#FFB000] px-6 py-2 font-semibold transition group-hover:gap-3">
                 Visitar sitio <FaExternalLinkAlt size={14} />
