@@ -1,122 +1,110 @@
-"use client";
+type Unidad = {
+  nombre: string;
+  items?: string[];
+};
 
-import { useRef } from "react";
-import Script from "next/script";
+type Area = {
+  nombre: string;
+  miembros: { nombre: string; rol?: string }[];
+  unidades?: Unidad[];
+};
+
+const areas: Area[] = [
+  {
+    nombre: "Gestión de I+D+i",
+    miembros: [
+      { nombre: "Carolina Ramírez", rol: "Ciencias Sociales" },
+      { nombre: "Mary Carlota Bernal", rol: "TIC'S e IA" },
+      { nombre: "Investigador Novel" },
+    ],
+  },
+  {
+    nombre: "Administración y finanzas",
+    miembros: [{ nombre: "Asistente Administrativo" }, { nombre: "Costos y Operaciones" }],
+  },
+  {
+    nombre: "Servicios de apoyo",
+    miembros: [],
+    unidades: [
+      {
+        nombre: "Documentación y Comunicación",
+        items: ["Diseñador Gráfico", "Community Manager", "Producciones Multimedia"],
+      },
+      { nombre: "Servicios Técnicos", items: ["Hardware y Software"] },
+    ],
+  },
+];
+
+function Conector() {
+  return <div className="mx-auto h-8 w-[3px] bg-white/80" />;
+}
+
+function CargoCard({ nombre, rol }: { nombre: string; rol: string }) {
+  return (
+    <div className="mx-auto w-full max-w-sm rounded-2xl border-2 border-white bg-[#FFB000] px-6 py-5 text-center shadow-lg">
+      <p className="text-lg font-bold text-black sm:text-xl">{nombre}</p>
+      <p className="mt-1 text-sm font-medium text-black/75 sm:text-base">{rol}</p>
+    </div>
+  );
+}
 
 export default function NuevoOrganigrama() {
-  const chartRef = useRef(null);
-
-  const inicializarChart = () => {
-    if (!window.OrgChart || !chartRef.current) return;
-
-    // 1. Plantilla personalizada basada en 'ana'
-    window.OrgChart.templates.ciefTemplate = Object.assign(
-      {},
-      window.OrgChart.templates.ana
-    );
-
-    // 2. Tamaño real de la tarjeta (esto es lo que de verdad controla
-    //    el tamaño del nodo cuando se usa una plantilla personalizada;
-    //    nodeWidth/nodeHeight de la config general NO aplica aquí)
-    window.OrgChart.templates.ciefTemplate.size = [320, 130];
-
-    // 3. Tarjeta con tus colores
-    window.OrgChart.templates.ciefTemplate.node = `
-      <rect x="0" y="0" width="320" height="130"
-             fill="#FFB000"
-             stroke="#68AB6A"
-             stroke-width="2"
-             rx="16" ry="16">
-      </rect>`;
-
-    // 4. Nombre (coordenadas fijas acordes al tamaño 320x130 de arriba)
-    window.OrgChart.templates.ciefTemplate.field_0 = `
-      <text data-width="290" font-size="16" font-weight="bold"
-            fill="#000000" x="160" y="50" text-anchor="middle">
-        {val}
-      </text>`;
-
-    // 5. Cargo
-    window.OrgChart.templates.ciefTemplate.field_1 = `
-      <text data-width="290" font-size="13"
-            fill="#333333" x="160" y="90" text-anchor="middle">
-        {val}
-      </text>`;
-
-    // 6. Inicializar con TODO más grande
-    const chart = new window.OrgChart(chartRef.current, {
-      template: "ciefTemplate",
-      nodeBinding: {
-        field_0: "name",
-        field_1: "role",
-      },
-      // --- Tamaños grandes ---
-      levelSeparation: 90,      // espacio vertical entre niveles
-      siblingSeparation: 50,    // espacio horizontal entre hermanos
-      subtreeSeparation: 70,    // espacio entre subárboles
-      link: { width: 3 },       // líneas gruesas
-
-      // --- Ajustes para que ocupe el ancho disponible ---
-      scaleInitial: 0.9,        // empieza un poco más grande
-      enableZoom: true,         // permitir zoom con rueda/pinch
-      mouseWheelZoom: true,
-      padding: 40,
-    });
-
-    // 7. Cargar datos
-    chart.load([
-      { id: 1,  name: "Luis Ortiz Ospino",       role: "Vicerrector de Investigación" },
-      { id: 2,  pid: 1, name: "Neida Albornoz Arias", role: "Director CIEF" },
-      { id: 3,  pid: 2, name: "Gestión de I+D+i",     role: "" },
-      { id: 4,  pid: 2, name: "Administración y finanzas", role: "" },
-      { id: 5,  pid: 2, name: "Servicios de apoyo",   role: "" },
-      { id: 6,  pid: 3, name: "Carolina Ramírez",      role: "Ciencias Sociales" },
-      { id: 7,  pid: 3, name: "Mary Carlota Bernal",   role: "TIC'S e IA" },
-      { id: 8,  pid: 3, name: "Investigador Novel",    role: "" },
-      { id: 9,  pid: 4, name: "Asistente Administrativo", role: "" },
-      { id: 10, pid: 4, name: "Costos y Operaciones",  role: "" },
-      { id: 11, pid: 5, name: "Documentación y Comunicación", role: "" },
-      { id: 12, pid: 5, name: "Servicios Técnicos",    role: "" },
-      { id: 13, pid: 11, name: "Diseñador Gráfico",    role: "" },
-      { id: 14, pid: 11, name: "Comunity Manager",     role: "" },
-      { id: 15, pid: 11, name: "Producciones Multimedia", role: "" },
-      { id: 16, pid: 12, name: "Hardware y Software",  role: "" },
-    ]);
-
-    // 8. Ajustar al ancho del contenedor tras renderizar
-    setTimeout(() => {
-      try {
-        if (chart.fit) chart.fit();
-      } catch (e) {
-        // Si no existe fit() en la Community, ignorar
-      }
-    }, 300);
-  };
-
   return (
-    <section className="relative bg-[#68AB6A] text-black py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-12">
-      <div className="max-w-[1400px] mx-auto">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-12 text-center">
+    <section className="relative bg-[#68AB6A] px-4 py-16 text-black sm:px-6 sm:py-20 md:py-24 lg:px-12">
+      <div className="mx-auto max-w-6xl">
+        <h2 className="mb-12 text-center text-3xl font-extrabold text-white sm:text-4xl md:text-5xl">
           Centro de Investigación en Estudios Fronterizos (CIEF)
         </h2>
 
-        {/* Contenedor más alto y sin límite de ancho pequeño */}
-        <div
-          ref={chartRef}
-          id="tree"
-          style={{
-            width: "100%",
-            height: "120vh",          // antes 80vh → ahora más alto
-            background: "#68AB6A",
-          }}
-        />
-      </div>
+        <CargoCard nombre="Luis Ortiz Ospino" rol="Vicerrector de Investigación" />
+        <Conector />
+        <CargoCard nombre="Neida Albornoz Arias" rol="Directora CIEF" />
+        <Conector />
 
-      <Script
-        src="https://cdn.balkan.app/orgchart-community.js"
-        strategy="afterInteractive"
-        onLoad={inicializarChart}
-      />
+        {/* Barra horizontal que une las tres áreas (solo en pantallas anchas) */}
+        <div className="relative hidden md:block">
+          <div className="mx-auto h-[3px] w-2/3 bg-white/80" />
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-3 md:gap-6">
+          {areas.map((area) => (
+            <div key={area.nombre} className="flex flex-col">
+              <div className="mx-auto hidden h-6 w-[3px] bg-white/80 md:block" />
+              <div className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-lg">
+                <h3 className="bg-[#FFB000] px-4 py-4 text-center text-lg font-bold">
+                  {area.nombre}
+                </h3>
+                <div className="flex flex-1 flex-col gap-3 p-4">
+                  {area.miembros.map((m) => (
+                    <div
+                      key={m.nombre}
+                      className="rounded-xl border-l-4 border-[#68AB6A] bg-[#F2FAF5] px-4 py-3"
+                    >
+                      <p className="font-semibold">{m.nombre}</p>
+                      {m.rol && <p className="text-sm text-black/70">{m.rol}</p>}
+                    </div>
+                  ))}
+                  {area.unidades?.map((u) => (
+                    <div key={u.nombre} className="rounded-xl border border-[#68AB6A]/40 p-3">
+                      <p className="mb-2 font-semibold text-[#2D7A43]">{u.nombre}</p>
+                      <ul className="space-y-2">
+                        {u.items?.map((item) => (
+                          <li
+                            key={item}
+                            className="rounded-lg border-l-4 border-[#FFB000] bg-[#FFF7E8] px-3 py-2 text-sm"
+                          >
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

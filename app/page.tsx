@@ -407,7 +407,7 @@ export default function HomePage() {
         <div className="mt-10">
           
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* TARJETA 2023 */}
             <Link
               href="/2023"
@@ -438,6 +438,17 @@ export default function HomePage() {
                         transition-all duration-300"
             >
               <h2 className="text-3xl font-bold text-black">2025</h2>
+              <span className="text-sm text-black font-medium">Ver Eventos</span>
+            </Link>
+
+            {/* TARJETA 2026 */}
+            <Link
+              href="/2026"
+              className="bg-[#FFB000] rounded-xl p-6 shadow-lg text-center
+                        hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.03]
+                        transition-all duration-300"
+            >
+              <h2 className="text-3xl font-bold text-black">2026</h2>
               <span className="text-sm text-black font-medium">Ver Eventos</span>
             </Link>
           </div>

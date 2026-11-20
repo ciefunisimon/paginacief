@@ -2,23 +2,23 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
-export default function Videos2025Page() {
+export default function Videos2026Page() {
   const videos = [
     {
       title:
         
-        "Panel 1. Movilidad Humana, Cuidado y Salud | Panel inaugural - 1.er Encuentro de la RII CIVITASS con los profesores Neida Albornoz Arias, Manuel Ernesto Riaño y Carolina Ramírez, y la moderación de la profesora María Antonia Cuberos, todos de la Unisimon, campus Cúcuta.",
-      url: "https://www.youtube.com/watch?v=_irMSoO9McQ&t=16s",
+        "1.er Encuentro de la RII CIVITASS. Panel 1. Movilidad Humana, Cuidado y Salud. Panel inaugural con los profesores Neida Albornoz Arias, Manuel Ernesto Riaño y Carolina Ramírez, y la moderación de la profesora María Antonia Cuberos, todos de la Unisimon, campus Cúcuta.",
+      url: "https://www.youtube.com/embed/_irMSoO9McQ?start=16",
     },
     {
       title:
-        "Panel 2. Derechos Humanos, Trabajo Decente y Movilidad Humana | Panel - 1.er Encuentro de la RII CIVITASS reunió a Dhayana Fernández Matos, de la Universidade Federal de Pelotas (Brasil); Nahin Numa Sanjuan, de la Unisimon, campus Cúcuta, y Ramiro Alfredo Torrico Irahola, de la UTEPSA (Bolivia), con la moderación de Alex Dávila Romero, de la Universidad Nacional de Costa Rica.",
-      url: "https://www.youtube.com/watch?v=xwHnXsp58vE",
+        "1.er Encuentro de la RII CIVITASS. Panel 2. Derechos Humanos, Trabajo Decente y Movilidad Humana. Reunió a Dhayana Fernández Matos, de la Universidade Federal de Pelotas (Brasil); Nahin Numa Sanjuan, de la Unisimon, campus Cúcuta, y Ramiro Alfredo Torrico Irahola, de la UTEPSA (Bolivia), con la moderación de Alex Dávila Romero, de la Universidad Nacional de Costa Rica.",
+      url: "https://www.youtube.com/embed/xwHnXsp58vE",
     },
     {
       title:
-        "Plenaria 3. Economías de Frontera, Emprendimiento y Turismo | Panel - 1.er Encuentro de la RII CIVITASS con Marcelo Roger Meneghatti y Luciana Oliveira de Farina, de la Universidade Estadual do Oeste do Paraná (Brasil), y Alex Dávila Romero, de la Universidad Nacional de Costa Rica, moderado por Juliet Paola Acevedo, de la Unisimon, campus Cúcuta.",
-      url: "https://www.youtube.com/watch?v=zV-7Pw3BahQ&t=5306s",
+        "1.er Encuentro de la RII CIVITASS. Plenaria 3. Economías de Frontera, Emprendimiento y Turismo. Con Marcelo Roger Meneghatti y Luciana Oliveira de Farina, de la Universidade Estadual do Oeste do Paraná (Brasil), y Alex Dávila Romero, de la Universidad Nacional de Costa Rica, moderado por Juliet Paola Acevedo, de la Unisimon, campus Cúcuta.",
+      url: "https://www.youtube.com/embed/zV-7Pw3BahQ?start=5306",
     },
   ];
 
@@ -32,7 +32,7 @@ export default function Videos2025Page() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* 🔹 Título principal */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10">
-              Eventos 2025
+              Eventos 2026
             </h1>
 
             {/* 🔸 Grid responsive de videos */}
